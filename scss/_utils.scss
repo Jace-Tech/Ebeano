@@ -1,0 +1,198 @@
+
+.text-orange{
+    color: $primary-color;
+}
+
+.bg-orange{
+    background-color: $primary-color;
+}
+
+.bg-off-white{
+    background-color: $off-white;
+}
+
+.not-mobile{
+    display: block;
+}
+
+button{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    display: inline-block;
+}
+
+.hr{
+    width: 100%;
+    height: 1px;
+    background-color: $off-white;
+}
+
+@media (max-width: 768px) {
+    .hr{
+        display: none;
+    }
+}
+
+.mobile{
+    display: none !important;
+}
+
+@media (max-width: 768px) {
+    .mobile{
+        display: block !important;
+
+        &.d-flex{
+            display: flex !important;
+        }
+    }
+
+    .not-mobile{
+        display: none !important;
+    }
+}
+
+.e-btn{
+    padding: .55rem 1.5rem;
+    display: inline-block;
+    width: fit-content;
+    background-color: $primary-color;
+    color: #fff;
+    font-size: .75rem;
+    text-transform: capitalize;
+    text-decoration: none;
+    border-radius: $radius;
+
+    &:hover{
+        color: #fff;
+        background-color: rgba($primary-color, .75);
+    }
+}
+
+
+.text-purple{
+    color: $purple;
+}
+
+.bg-purple{
+    background-color: $purple;
+}
+
+.text-light-darkend{
+    color: rgba(255, 255, 255, .85);
+}
+
+.text-dark{
+    color: $dark;
+}
+
+.bg-dark{
+    background-color: $dark;
+}
+
+
+.text-black{
+    color: $black;
+}
+
+.bg-black{
+    background-color: $black;
+}
+
+.e-container{
+    width: 90%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px){
+    .e-container{
+        width: 100%;
+    }
+}
+
+.icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    &.big{
+        font-size: 2.5rem;
+    }
+}
+
+.swiper-container{
+    width: 100%;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+
+    &.mobile{
+        height: 250px;
+    }
+
+    &.fluid{
+        height: fit-content;
+        min-height: 250px;
+    }
+}
+
+
+
+@each $index in (1, 2, 3, 4, 5) {
+
+    .px-sm-#{$index}{
+        padding-left: 0 * $index !important;
+        padding-right: 0 * $index !important;
+    }
+
+    .py-sm-#{$index}{
+        padding-top: 0 * $index !important;
+        padding-bottom: 0 * $index !important;
+    }
+
+    .my-sm-#{$index}{
+        margin-top: 0 * $index !important;
+        margin-bottom: 0 * $index !important;
+    }
+
+    .mx-sm-#{$index}{
+        margin-left: 0 * $index !important;
+        margin-right: 0 * $index !important;
+    }
+
+    @media (max-width: 768px) {
+        .px-sm-#{$index}{
+            padding-left: 5px * $index !important;
+            padding-right: 5px * $index !important;
+        }
+
+        .py-sm-#{$index}{
+            padding-top: 5px * $index !important;
+            padding-bottom: 5px * $index !important;
+        }
+
+        .my-sm-#{$index}{
+            margin-top: 5px * $index !important;
+            margin-bottom: 5px * $index !important;
+        }
+
+        .mx-sm-#{$index}{
+            margin-left: 5px * $index !important;
+            margin-right: 5px * $index !important;
+        }
+    }
+}
+
+
+
+//= MIXINS
+@mixin transit ($prop) {
+    @if($prop != ""){
+        transition: $prop .5s ease-in-out;
+    }
+    @else{
+        transition: all .5s ease-in-out;
+    }
+}

@@ -1,0 +1,3446 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ebeano Market</title>
+
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="./css/bootstrap-reboot.min.css">
+        <link rel="stylesheet" href="./css/bootstrap-utilities.min.css">
+        <link rel="stylesheet" href="./css/bootstrap-grid.min.css">
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+        <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+
+        <!-- Main Styles -->
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/modify.css">
+        <link rel="stylesheet" href="./plugins/aos/aos.css">
+
+        <!-- Swiper -->
+        <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" /> -->
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="./plugins/country/css/countrySelect.min.css">
+        <!-- Scripts -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+        <script src="./js/utils.js" defer></script>
+        <script src="./js/lang.js" defer></script>
+        <script src="./js/aos.js" defer></script>
+        <script src="./js/index.js" defer></script>
+        <script src="./js/swiper.js" defer></script>
+        <script src="./js/mobile.js" defer></script>
+    </head>
+
+    <body>
+
+        <!-- ================== Modals ========================== -->
+
+        <!-- SignIn Modal -->
+        <div class="e-modal" id="sign-up-modal">
+            <div class="e-modal-inner">
+                <div class="d-flex flex-column account">
+                    <div class="w-100 d-flex align-items-center flex-column">
+                        <h3 class="e-modal-title">get started now</h3>
+                        <button class="e-btn d-flex align-items-center">
+                            <span class="d-flex align-items-center icon">
+                                <ion-icon name="person-add-outline"></ion-icon>
+                            </span>
+                            <span>Sign Up</span>
+                        </button>
+
+                        <h4 class="or">OR</h4>
+
+                        <button class="e-btn-link d-flex align-items-center">
+                            <span class="d-flex align-items-center icon">
+                                <ion-icon name="person-outline"></ion-icon>
+                            </span>
+                            <span>Sign In</span>
+                        </button>
+                    </div>
+
+                    <div class="mt-4 w-100 pb-4 alt-sign">
+                        <h5 class="small text-capitalize text-center w-100">continue with:</h5>
+
+                        <div class="d-flex align-items-center mt-2 justify-content-center w-100">
+                            <a href="" class="btn-atc">
+                                <img src="./img/goggle.PNG" alt="gmail">
+                            </a>
+
+                            <a href="" class="btn-atc ">
+                                <img src="./img/facebook.PNG" alt="facebook">
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Mobile SideBar -->
+        <div class="side-bar" id="side-bar">
+            <div class="d-flex align-items-center border-bottom py-3">
+                <a id="close-side" class="d-flex align-items-center text-dark h1 m-0 me-3">
+                    <ion-icon name="close-outline"></ion-icon>
+                </a>
+
+                <a href="" class="d-flex align-items-center ">
+                    <img src="./img/logo.png" class="for-mobile" alt="">
+                </a>
+            </div>
+
+            <div class="d-flex align-items-center border-bottom">
+                <a href="#" class="side-bar-item">
+                    <div class="icon">
+                        <ion-icon name="headset-outline"></ion-icon>
+                    </div>
+                    <h5 class="text">live help</h5>
+                </a>
+            </div>
+
+            <div class="side-bar-menu border-bottom">
+                <h3 class="side-bar-title">my ebeano account</h3>
+
+                <a href="#" class="side-bar-item">
+                    <div class="icon">
+                        <ion-icon name="car-outline"></ion-icon>
+                    </div>
+                    <h5 class="text">track order</h5>
+                </a>
+
+                <a href="#" class="side-bar-item">
+                    <div class="icon">
+                        <ion-icon name="tablet-portrait-sharp"></ion-icon>
+                    </div>
+                    <h5 class="text">download</h5>
+                </a>
+
+                <!-- Special -- -->
+            </div>
+
+            <!-- Categories -->
+            <div class="side-bar-menu border-bottom">
+                <div class="d-flex align-items-center justify-content-between mb-3">
+                    <h3 class="side-bar-title m-0">Other categories</h3>
+                    <a href="#" class="side-bar-link">See All</a>
+                </div>
+
+                <a href="#" class="side-bar-item">
+                    <div class="icon">
+                        <ion-icon name="star-outline"></ion-icon>
+                    </div>
+                    <h5 class="text">jewelries</h5>
+                </a>
+
+                <a href="#" class="side-bar-item">
+                    <div class="icon">
+                        <ion-icon name="woman-outline"></ion-icon>
+                    </div>
+                    <h5 class="text">fashion</h5>
+                </a>
+
+                <a href="#" class="side-bar-item">
+                    <div class="icon">
+                        <ion-icon name="game-controller-outline"></ion-icon>
+                    </div>
+                    <h5 class="text">gaming</h5>
+                </a>
+
+                <a href="#" class="side-bar-item">
+                    <div class="icon">
+                        <ion-icon name="tv-outline"></ion-icon>
+                    </div>
+                    <h5 class="text">electronics</h5>
+                </a>
+
+                <a href="#" class="side-bar-item">
+                    <div class="icon">
+                        <ion-icon name="happy-outline"></ion-icon>
+                    </div>
+                    <h5 class="text">baby products</h5>
+                </a>
+
+                <a href="#" class="side-bar-item">
+                    <div class="icon">
+                        <ion-icon name="home-outline"></ion-icon>
+                    </div>
+                    <h5 class="text">home & office</h5>
+                </a>
+
+                <a href="#" class="side-bar-item">
+                    <div class="icon">
+                        <ion-icon name="barbell-outline"></ion-icon>
+                    </div>
+                    <h5 class="text">sporting goods</h5>
+                </a>
+
+                <a href="#" class="side-bar-item">
+                    <div class="icon">
+                        <ion-icon name="tablet-portrait-sharp"></ion-icon>
+                    </div>
+                    <h5 class="text">phones & tablets</h5>
+                </a>
+
+                <a href="#" class="side-bar-item">
+                    <div class="icon">
+                        <ion-icon name="heart-outline"></ion-icon>
+                    </div>
+                    <h5 class="text">Health & Beauty</h5>
+                </a>
+
+                <a href="#" class="side-bar-item">
+                    <div class="icon">
+                        <ion-icon name="desktop-outline"></ion-icon>
+                    </div>
+                    <h5 class="text">computer & accessories</h5>
+                </a>
+
+                <!-- Special -- -->
+            </div>
+
+            <!-- Services -->
+            <div class="side-bar-menu border-bottom">
+                <div class="d-flex align-items-center justify-content-between mb-3">
+                    <h3 class="side-bar-title m-0">our services</h3>
+                    <a href="#" class="side-bar-link">See All</a>
+                </div>
+
+                <a href="#" class="side-bar-item">
+                    <div class="icon">
+                        <img src="./img/hotel.png" alt="" class="service-icon">
+                    </div>
+                    <h5 class="text">real estate</h5>
+                </a>
+
+                <a href="#" class="side-bar-item">
+                    <div class="icon">
+                        <img src="./img/bills.png" alt="" class="service-icon">
+                    </div>
+                    <h5 class="text">ebeano pay</h5>
+                </a>
+
+                <a href="#" class="side-bar-item">
+                    <div class="icon">
+                        <img src="./img/bills.png" alt="" class="service-icon">
+                    </div>
+                    <h5 class="text">airtime recharge </h5>
+                </a>
+
+                <a href="#" class="side-bar-item">
+                    <div class="icon">
+                        <img src="./img/calender.png" alt="" class="service-icon">
+                    </div>
+                    <h5 class="text">hotel & airline bookings</h5>
+                </a>
+
+                <a href="#" class="side-bar-item">
+                    <div class="icon">
+                        <img src="./img/hotel.png" alt="" class="service-icon">
+                    </div>
+                    <h5 class="text">education</h5>
+                </a>
+
+                <a href="#" class="side-bar-item">
+                    <div class="icon">
+                        <img src="./img/market.png" alt="" class="service-icon">
+                    </div>
+                    <h5 class="text">bulk sales on ebeano</h5>
+                </a>
+
+            </div>
+
+            <!-- Extras -->
+
+            <a href="#" class="side-bar-item">
+                <div class="icon">
+                    <ion-icon name="pricetag-outline"></ion-icon>
+                </div>
+                <h5 class="text">sell on ebeano</h5>
+            </a>
+
+            <a href="#" class="side-bar-item">
+                <div class="icon">
+                    <ion-icon name="call-outline"></ion-icon>
+                </div>
+                <h5 class="text">contact us</h5>
+            </a>
+
+            <a href="#" class="side-bar-item">
+                <div class="icon">
+                    <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+                </div>
+                <h5 class="text">help center</h5>
+            </a>
+        </div>
+
+        <!-- Header Mobile -->
+        <header class="w-100 mobile-header mobile d-flex justify-content-between">
+            <div class="d-flex align-items-center">
+                <div class="d-flex align-items-center me-3">
+                    <button id="burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+
+                <a class="d-flex align-items-center text-decoration-none">
+                    <img src="./img/logo.png" class="for-mobile" alt="">
+                </a>
+            </div>
+
+            <ul class="m-0 p-0 d-flex align-items-center">
+                <li class="list-unstyled">
+                    <a href="" id="sign-up" class="text-decoration-none option-item">
+                        <ion-icon name="person-circle-outline"></ion-icon>
+                    </a>
+                </li>
+
+                <li class="list-unstyled cart-tab">
+                    <a href="#" class="text-decoration-none option-item">
+                        <ion-icon name="cart-outline"></ion-icon>
+                    </a>
+
+                    <div class="cart-dropdown">
+                        <div class="logged">
+                            <p>your cart is currently empty!</p>
+                            <a href="" class="e-btn">
+                                continue shopping
+                            </a>
+                        </div>
+
+                        <div class="not-logged">
+                            <p>your cart is currently empty!</p>
+                            <a href="" class="e-btn-link">
+                                <span>please sign in</span>
+                                <span class="icon ms-2">
+                                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </header>
+
+        <!-- Mobile Search -->
+        <section class="mobile py-3 w-100 bg-white d-flex align-items-center">
+            <div class="w-100 d-flex align-items-center for-mobile justify-content-center search-container">
+                <form class="search for-mobile w-100">
+                    <ul class="p-0 m-0 categories">
+                        <li class="list-unstyled e-dropdown">
+                            <a href="#" class="text-decoration-none px-1">
+                                <span>all categories</span>
+                                <div class="icon">
+                                    <ion-icon name="chevron-down-outline"></ion-icon>
+                                </div>
+                            </a>
+
+                            <div class="e-dropdown-menu">
+                                <ul class="m-0 p-0 w-100">
+                                    <li class="list-unstyled e-dropdown-link">
+                                        <a href="" class="text-decoration-none">
+                                            <span class="main">
+                                                <span class="icon">
+                                                    <ion-icon name="star-outline"></ion-icon>
+                                                </span>
+                                                <span class="name">jewelries</span>
+                                            </span>
+
+                                            <span>
+                                                <span class="icon">
+                                                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                                                </span>
+                                            </span>
+                                        </a>
+                                    </li>
+
+                                    <li class="list-unstyled e-dropdown-link">
+                                        <a href="" class="text-decoration-none">
+                                            <span class="main">
+                                                <span class="icon">
+                                                    <ion-icon name="woman-outline"></ion-icon>
+                                                </span>
+                                                <span class="name">fashion</span>
+                                            </span>
+
+                                            <span>
+                                                <span class="icon">
+                                                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                                                </span>
+                                            </span>
+                                        </a>
+                                    </li>
+
+                                    <li class="list-unstyled e-dropdown-link">
+                                        <a href="" class="text-decoration-none">
+                                            <span class="main">
+                                                <span class="icon">
+                                                    <ion-icon name="game-controller-outline"></ion-icon>
+                                                </span>
+                                                <span class="name">gaming</span>
+                                            </span>
+
+                                            <span>
+                                                <span class="icon">
+                                                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                                                </span>
+                                            </span>
+                                        </a>
+                                    </li>
+
+                                    <li class="list-unstyled e-dropdown-link">
+                                        <a href="" class="text-decoration-none">
+                                            <span class="main">
+                                                <span class="icon">
+                                                    <ion-icon name="tv-outline"></ion-icon>
+                                                </span>
+                                                <span class="name">electronics</span>
+                                            </span>
+
+                                            <span>
+                                                <span class="icon">
+                                                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                                                </span>
+                                            </span>
+                                        </a>
+                                    </li>
+
+                                    <li class="list-unstyled e-dropdown-link">
+                                        <a href="" class="text-decoration-none">
+                                            <span class="main">
+                                                <span class="icon">
+                                                    <ion-icon name="happy-outline"></ion-icon>
+                                                </span>
+                                                <span class="name">Baby products</span>
+                                            </span>
+
+                                            <span>
+                                                <span class="icon">
+                                                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                                                </span>
+                                            </span>
+                                        </a>
+                                    </li>
+
+                                    <li class="list-unstyled e-dropdown-link">
+                                        <a href="" class="text-decoration-none">
+                                            <span class="main">
+                                                <span class="icon">
+                                                    <ion-icon name="home-outline"></ion-icon>
+                                                </span>
+                                                <span class="name">Home & office</span>
+                                            </span>
+
+                                            <span>
+                                                <span class="icon">
+                                                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                                                </span>
+                                            </span>
+                                        </a>
+                                    </li>
+
+                                    <li class="list-unstyled e-dropdown-link">
+                                        <a href="" class="text-decoration-none">
+                                            <span class="main">
+                                                <span class="icon">
+                                                    <ion-icon name="barbell-outline"></ion-icon>
+                                                </span>
+                                                <span class="name">sporting goods</span>
+                                            </span>
+
+                                            <span>
+                                                <span class="icon">
+                                                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                                                </span>
+                                            </span>
+                                        </a>
+                                    </li>
+
+                                    <li class="list-unstyled e-dropdown-link">
+                                        <a href="" class="text-decoration-none">
+                                            <span class="main">
+                                                <span class="icon">
+                                                    <ion-icon name="tablet-portrait-sharp"></ion-icon>
+                                                </span>
+                                                <span class="name">phones & tablet</span>
+                                            </span>
+
+                                            <span>
+                                                <span class="icon">
+                                                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                                                </span>
+                                            </span>
+                                        </a>
+                                    </li>
+
+                                    <li class="list-unstyled e-dropdown-link">
+                                        <a href="" class="text-decoration-none">
+                                            <span class="main">
+                                                <span class="icon">
+                                                    <ion-icon name="heart-outline"></ion-icon>
+                                                </span>
+                                                <span class="name">health & beauty</span>
+                                            </span>
+
+                                            <span>
+                                                <span class="icon">
+                                                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                                                </span>
+                                            </span>
+                                        </a>
+                                    </li>
+
+                                    <li class="list-unstyled e-dropdown-link">
+                                        <a href="" class="text-decoration-none">
+                                            <span class="main">
+                                                <span class="icon">
+                                                    <ion-icon name="desktop-outline"></ion-icon>
+                                                </span>
+                                                <span class="name">computer & accessories</span>
+                                            </span>
+
+                                            <span>
+                                                <span class="icon">
+                                                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                                                </span>
+                                            </span>
+                                        </a>
+                                    </li>
+
+                                    <li class="list-unstyled e-dropdown-link">
+                                        <a href="" class="text-decoration-none">
+                                            <span class="main">
+                                                <span class="icon">
+                                                    <ion-icon name="grid-outline"></ion-icon>
+                                                </span>
+                                                <span class="name">other categories</span>
+                                            </span>
+
+                                            <span>
+                                                <span class="icon">
+                                                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                                                </span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="e-search-input for-mobile">
+                        <input type="search" class="e-form-control" placeholder="What are you looking for..." >
+                        <div class="icon">
+                            <ion-icon name="camera-outline"></ion-icon>
+                        </div>
+                    </div>
+                    <button type="submit">
+                        <div class="icon me-2">
+                            <ion-icon name="search-outline"></ion-icon>
+                        </div>
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Header Desktop -->
+        <header class="w-100 desktop shadow-sm aos-item aos-animate aos-init" data-aos="fade-in">
+            <!-- Top nav -->
+            <div class="top-header bg-orange">
+                <div class="e-container">
+                    <div class="d-flex align-items-center justify-content-between aos-item aos-animate aos-init__inner">
+                        <div class="d-flex align-items-center">
+                            <ul class="m-0 p-0 w-100 d-lg-flex">
+                                <li class="list-unstyled top-header-link">
+                                    <a href="" class="text-decoration-none">
+                                        <div class="icon">
+                                            <ion-icon name="pricetag-outline"></ion-icon>
+                                        </div>
+
+                                        <span>Sell on ebeno</span>
+                                    </a>
+                                </li>
+
+                                <li class="list-unstyled top-header-link">
+                                    <a href="" class="text-decoration-none">
+                                        <div class="icon">
+                                            <ion-icon name="car-sharp"></ion-icon>
+                                        </div>
+
+                                        <span>Track order</span>
+                                    </a>
+                                </li>
+
+                                <li class="list-unstyled top-header-link">
+                                    <a href="" class="text-decoration-none">
+                                        <div class="icon">
+                                            <ion-icon name="phone-portrait-sharp"></ion-icon>
+                                        </div>
+
+                                        <span>Download</span>
+                                    </a>
+                                </li>
+
+                                <li class="list-unstyled top-header-link">
+                                    <div class="d-flex align-items-center">
+                                        <a href="" class="text-decoration-none social-icon">
+                                            <ion-icon name="logo-facebook"></ion-icon>
+                                        </a>
+
+                                        <a href="" class="text-decoration-none social-icon">
+                                            <ion-icon name="logo-twitter"></ion-icon>
+                                        </a>
+
+                                        <a href="" class="text-decoration-none social-icon">
+                                            <ion-icon name="logo-instagram"></ion-icon>
+                                        </a>
+
+                                        <a href="" class="text-decoration-none social-icon">
+                                            <ion-icon name="logo-linkedin"></ion-icon>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="d-flex align-items-center">
+                            <ul class="m-0 p-0 w-100 d-lg-flex">
+                                <li class="list-unstyled top-header-link">
+                                    <a href="#" class="text-decoration-none">
+                        				<form class="" action="" method="post">
+                                            <input id="country_selector" class="country-input" type="text" >
+                            				<input id="country_selector_code" name="" hidden type="text">
+                                        </form>
+                                    </a>
+                                </li>
+
+                                <li class="list-unstyled top-header-link">
+                                    <a href="#" class="text-decoration-none">
+                        				<form class="" action="" method="post">
+                                            <input id="lang_selector" class="country-input" type="text">
+                                            <input id="lang_selector_code" class="country-input" hidden type="text">
+                                        </form>
+                                    </a>
+                                </li>
+
+                                <li class="list-unstyled top-header-link">
+                                    <a href="#" class="text-decoration-none">
+                                        <div class="icon">
+                                            <ion-icon name="person-add-outline"></ion-icon>
+                                        </div>
+
+                                        <span>sign up</span>
+                                    </a>
+                                </li>
+
+                                <li class="list-unstyled top-header-link">
+                                    <a href="" class="text-decoration-none">
+                                        <div class="icon">
+                                            <ion-icon name="person-outline"></ion-icon>
+                                        </div>
+
+                                        <span>sign in</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main nav -->
+            <div class="main-nav">
+                <div class="e-container">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <a href="" class="text-decoration-none logo">
+                            <img src="./img/logo.png" alt="">
+                        </a>
+
+                        <div class="flex-grow-1 d-flex align-items-center justify-content-center search-container">
+                            <form class="search">
+                                <ul class="p-0 m-0 categories">
+                                    <li class="list-unstyled e-dropdown">
+                                        <a class="text-decoration-none">
+                                            <span>all categories</span>
+                                            <div class="icon">
+                                                <ion-icon name="chevron-down-outline"></ion-icon>
+                                            </div>
+                                        </a>
+
+                                        <div class="e-dropdown-menu">
+                                            <ul class="m-0 p-0 w-100">
+                                                <li class="list-unstyled e-dropdown-link">
+                                                    <a href="" class="text-decoration-none">
+                                                        <span class="main">
+                                                            <span class="icon">
+                                                                <ion-icon name="star-outline"></ion-icon>
+                                                            </span>
+                                                            <span class="name">jewelries</span>
+                                                        </span>
+
+                                                        <span>
+                                                            <span class="icon">
+                                                                <ion-icon name="chevron-forward-outline"></ion-icon>
+                                                            </span>
+                                                        </span>
+                                                    </a>
+                                                </li>
+
+                                                <li class="list-unstyled e-dropdown-link">
+                                                    <a href="" class="text-decoration-none">
+                                                        <span class="main">
+                                                            <span class="icon">
+                                                                <ion-icon name="woman-outline"></ion-icon>
+                                                            </span>
+                                                            <span class="name">fashion</span>
+                                                        </span>
+
+                                                        <span>
+                                                            <span class="icon">
+                                                                <ion-icon name="chevron-forward-outline"></ion-icon>
+                                                            </span>
+                                                        </span>
+                                                    </a>
+                                                </li>
+
+                                                <li class="list-unstyled e-dropdown-link">
+                                                    <a href="" class="text-decoration-none">
+                                                        <span class="main">
+                                                            <span class="icon">
+                                                                <ion-icon name="game-controller-outline"></ion-icon>
+                                                            </span>
+                                                            <span class="name">gaming</span>
+                                                        </span>
+
+                                                        <span>
+                                                            <span class="icon">
+                                                                <ion-icon name="chevron-forward-outline"></ion-icon>
+                                                            </span>
+                                                        </span>
+                                                    </a>
+                                                </li>
+
+                                                <li class="list-unstyled e-dropdown-link">
+                                                    <a href="" class="text-decoration-none">
+                                                        <span class="main">
+                                                            <span class="icon">
+                                                                <ion-icon name="tv-outline"></ion-icon>
+                                                            </span>
+                                                            <span class="name">electronics</span>
+                                                        </span>
+
+                                                        <span>
+                                                            <span class="icon">
+                                                                <ion-icon name="chevron-forward-outline"></ion-icon>
+                                                            </span>
+                                                        </span>
+                                                    </a>
+                                                </li>
+
+                                                <li class="list-unstyled e-dropdown-link">
+                                                    <a href="" class="text-decoration-none">
+                                                        <span class="main">
+                                                            <span class="icon">
+                                                                <ion-icon name="happy-outline"></ion-icon>
+                                                            </span>
+                                                            <span class="name">Baby products</span>
+                                                        </span>
+
+                                                        <span>
+                                                            <span class="icon">
+                                                                <ion-icon name="chevron-forward-outline"></ion-icon>
+                                                            </span>
+                                                        </span>
+                                                    </a>
+                                                </li>
+
+                                                <li class="list-unstyled e-dropdown-link">
+                                                    <a href="" class="text-decoration-none">
+                                                        <span class="main">
+                                                            <span class="icon">
+                                                                <ion-icon name="home-outline"></ion-icon>
+                                                            </span>
+                                                            <span class="name">Home & office</span>
+                                                        </span>
+
+                                                        <span>
+                                                            <span class="icon">
+                                                                <ion-icon name="chevron-forward-outline"></ion-icon>
+                                                            </span>
+                                                        </span>
+                                                    </a>
+                                                </li>
+
+                                                <li class="list-unstyled e-dropdown-link">
+                                                    <a href="" class="text-decoration-none">
+                                                        <span class="main">
+                                                            <span class="icon">
+                                                                <ion-icon name="barbell-outline"></ion-icon>
+                                                            </span>
+                                                            <span class="name">sporting goods</span>
+                                                        </span>
+
+                                                        <span>
+                                                            <span class="icon">
+                                                                <ion-icon name="chevron-forward-outline"></ion-icon>
+                                                            </span>
+                                                        </span>
+                                                    </a>
+                                                </li>
+
+                                                <li class="list-unstyled e-dropdown-link">
+                                                    <a href="" class="text-decoration-none">
+                                                        <span class="main">
+                                                            <span class="icon">
+                                                                <ion-icon name="tablet-portrait-sharp"></ion-icon>
+                                                            </span>
+                                                            <span class="name">phones & tablet</span>
+                                                        </span>
+
+                                                        <span>
+                                                            <span class="icon">
+                                                                <ion-icon name="chevron-forward-outline"></ion-icon>
+                                                            </span>
+                                                        </span>
+                                                    </a>
+                                                </li>
+
+                                                <li class="list-unstyled e-dropdown-link">
+                                                    <a href="" class="text-decoration-none">
+                                                        <span class="main">
+                                                            <span class="icon">
+                                                                <ion-icon name="heart-outline"></ion-icon>
+                                                            </span>
+                                                            <span class="name">health & beauty</span>
+                                                        </span>
+
+                                                        <span>
+                                                            <span class="icon">
+                                                                <ion-icon name="chevron-forward-outline"></ion-icon>
+                                                            </span>
+                                                        </span>
+                                                    </a>
+                                                </li>
+
+                                                <li class="list-unstyled e-dropdown-link">
+                                                    <a href="" class="text-decoration-none">
+                                                        <span class="main">
+                                                            <span class="icon">
+                                                                <ion-icon name="desktop-outline"></ion-icon>
+                                                            </span>
+                                                            <span class="name">computer & accessories</span>
+                                                        </span>
+
+                                                        <span>
+                                                            <span class="icon">
+                                                                <ion-icon name="chevron-forward-outline"></ion-icon>
+                                                            </span>
+                                                        </span>
+                                                    </a>
+                                                </li>
+
+                                                <li class="list-unstyled e-dropdown-link">
+                                                    <a href="" class="text-decoration-none">
+                                                        <span class="main">
+                                                            <span class="icon">
+                                                                <ion-icon name="grid-outline"></ion-icon>
+                                                            </span>
+                                                            <span class="name">other categories</span>
+                                                        </span>
+
+                                                        <span>
+                                                            <span class="icon">
+                                                                <ion-icon name="chevron-forward-outline"></ion-icon>
+                                                            </span>
+                                                        </span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="e-search-input">
+                                    <input type="search" class="e-form-control" placeholder="What are you looking for..." >
+                                    <div class="icon">
+                                        <ion-icon name="camera-outline"></ion-icon>
+                                    </div>
+                                </div>
+                                <button type="submit">
+                                    <div class="icon me-2">
+                                        <ion-icon name="search-outline"></ion-icon>
+                                    </div>
+                                    <span>search</span>
+                                </button>
+                            </form>
+                        </div>
+
+                        <div class="account-options">
+                            <ul class="m-0 p-0 align-items-center d-flex">
+                                <li class="list-unstyled option-tab">
+                                    <a href="" class="text-decoration-none account-link">
+                                        <div class="icon">
+                                            <ion-icon name="person-circle-outline"></ion-icon>
+                                        </div>
+                                        <span>account</span>
+                                    </a>
+                                </li>
+
+                                <li class="list-unstyled option-tab">
+                                    <ul class="m-0 p-0 d-flex align-items-center">
+                                        <!-- Add ``logged-in`` class to the <li> if the user is logged in-->
+                                        <li class="list-unstyled cart-tab">
+                                            <a href="" class="text-decoration-none option-item">
+                                                <ion-icon name="cart-outline"></ion-icon>
+                                            </a>
+
+                                            <div class="cart-dropdown">
+                                                <div class="logged">
+                                                    <p>your cart is currently empty!</p>
+                                                    <a href="" class="e-btn">
+                                                        continue shopping
+                                                    </a>
+                                                </div>
+
+                                                <div class="not-logged">
+                                                    <p>your cart is currently empty!</p>
+                                                    <a href="" class="e-btn-link">
+                                                        <span>please sign in</span>
+                                                        <span class="icon ms-2">
+                                                            <ion-icon name="chevron-forward-outline"></ion-icon>
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="list-unstyled">
+                                            <a href="" class="text-decoration-none option-item">
+                                                <ion-icon name="heart-outline"></ion-icon>
+                                            </a>
+                                        </li>
+
+                                        <li class="list-unstyled">
+                                            <a href="" class="text-decoration-none option-item">
+                                                <ion-icon name="help-circle-outline"></ion-icon>
+                                            </a>
+                                        </li>
+
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Support -->
+            <div class="w-100">
+                <div class="e-container px-sm-2">
+                    <div class="row m-0 py-2 border">
+                        <div class="col-sm-12 col-md-4">
+                            <div class="d-flex align-items-center justify-content-center support first">
+                                <div class="icon">
+                                    <ion-icon name="car-outline"></ion-icon>
+                                </div>
+
+                                <div class="d-flex flex-column">
+                                    <h4>free shipping & return</h4>
+                                    <p>free shipping on all order over NGN5000</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 col-md-4">
+                            <div class="d-flex align-items-center justify-content-center support second">
+                                <div class="icon">
+                                    <ion-icon name="wallet-outline"></ion-icon>
+                                </div>
+
+                                <div class="d-flex flex-column">
+                                    <h4>money back guarantee</h4>
+                                    <p>100% money back guarantee</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 col-md-4">
+                            <div class="d-flex align-items-center justify-content-center support third">
+                                <div class="icon">
+                                    <ion-icon name="flash-outline"></ion-icon>
+                                </div>
+
+                                <div class="d-flex flex-column">
+                                    <h4>online support 24/7</h4>
+                                    <p>24/7 customer support</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slider -->
+            <div class="w-100 slide-wrapper mt-2">
+                <div class="row m-0">
+                    <div class="col-sm-12 col-md-6 col-lg-8 p-0">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="./img/bg.png" class="slider-image" alt="">
+
+                                    <div class="slide-content">
+                                        <div class="content-inner">
+                                            <h3 class="content-title">new arrival</h3>
+                                            <p class="content-body">
+                                                Don't forget to opt into multistore news to have your offers and rewards delivered right to your inbox
+                                            </p>
+                                            <div class="mt-4">
+                                                <a href="" class="e-btn">start shopping now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <!-- If we need navigation buttons -->
+                            <div class="swiper-btn swiper-btn-left">
+                                <ion-icon name="chevron-back-outline"></ion-icon>
+                            </div>
+                            <div class="swiper-btn swiper-btn-right">
+                                <ion-icon name="chevron-forward-outline"></ion-icon>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-4 p-0">
+                        <div class="row m-0 ps-2">
+                            <div class="col-12 p-0 banner mb-2">
+                                <img src="./img/stethoscope.png" class="banner-image" alt="">
+
+                                <div class="slide-content">
+                                    <div class="content-inner">
+                                        <h3 class="content-title">on sale</h3>
+
+                                        <div class="mt-2">
+                                            <a href="" class="e-btn">shop now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 p-0 banner">
+                                <img src="./img/belt.png" class="banner-image" alt="">
+
+                                <div class="slide-content">
+                                    <div class="content-inner">
+                                        <h3 class="content-title">On sale</h3>
+
+                                        <div class="mt-2">
+                                            <a href="" class="e-btn">shop now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Services -->
+            <div class="py-3">
+                <div class="row ps-4">
+                    <div class="col">
+                        <a href="" class="serices-tab">
+                            <img src="./img/market.png" alt="">
+                            <h4>marketplace</h4>
+                        </a>
+                    </div>
+
+                    <div class="col">
+                        <a href="" class="serices-tab">
+                            <img src="./img/artisan.png" alt="">
+                            <h4>artisans</h4>
+                        </a>
+                    </div>
+
+                    <div class="col">
+                        <a href="" class="serices-tab">
+                            <img src="./img/hotel.png" alt="">
+                            <h4>real estate</h4>
+                        </a>
+                    </div>
+
+                    <div class="col">
+                        <a href="" class="serices-tab">
+                            <img src="./img/bills.png" alt="">
+                            <h4>utility bill</h4>
+                        </a>
+                    </div>
+
+                    <div class="col">
+                        <a href="" class="serices-tab">
+                            <img src="./img/automobile.png" alt="">
+                            <h4>automobile</h4>
+                        </a>
+                    </div>
+
+                    <div class="col">
+                        <a href="" class="serices-tab">
+                            <img src="./img/calender.png" alt="">
+                            <h4>bookings</h4>
+                        </a>
+                    </div>
+
+                    <div class="col">
+                        <a href="" class="serices-tab border-0">
+                            <img src="./img/hotel.png" alt="">
+                            <h4>education</h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- For Mobile ==> Slider -->
+        <section class="w-100 mobile bg-white">
+            <div class="swiper-container mobile">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./img/bg.png" class="slider-image" alt="">
+
+                        <div class="slide-content px-3">
+                            <div class="content-inner">
+                                <h3 class="content-title">new arrival</h3>
+                                <p class="content-body">
+                                    Don't forget to opt into multistore news to have your offers and rewards delivered right to your inbox
+                                </p>
+                                <div class="mt-4">
+                                    <a href="" class="e-btn">start shopping now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-btn swiper-btn-left">
+                    <ion-icon name="chevron-back-outline"></ion-icon>
+                </div>
+                <div class="swiper-btn swiper-btn-right">
+                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                </div>
+            </div>
+        </section>
+
+        <!-- For Mobile -->
+        <section class="w-100 mobile bg-white py-3">
+            <div class="e-container px-sm-2">
+                <div class="row m-0 py-2 border">
+                    <div class="col-sm-12 col-md-4">
+                        <div class="w-100 d-flex align-items-center support for-mobile first">
+                            <div class="icon">
+                                <ion-icon name="car-outline"></ion-icon>
+                            </div>
+
+                            <div class="d-flex flex-column">
+                                <h4>free shipping & return</h4>
+                                <p>free shipping on all order over NGN5000</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-4">
+                        <div class="w-100 d-flex align-items-center support for-mobile second">
+                            <div class="icon">
+                                <ion-icon name="wallet-outline"></ion-icon>
+                            </div>
+
+                            <div class="d-flex flex-column">
+                                <h4>money back guarantee</h4>
+                                <p>100% money back guarantee</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-4">
+                        <div class="w-100 d-flex align-items-center support for-mobile third">
+                            <div class="icon">
+                                <ion-icon name="flash-outline"></ion-icon>
+                            </div>
+
+                            <div class="d-flex flex-column">
+                                <h4>online support 24/7</h4>
+                                <p>24/7 customer support</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="w-100 mt-3 py-2">
+            <div class="e-container">
+                <div class="row m-0 rounded bg-white shadow-sm aos-item aos-animate aos-init" data-aos="fade-up">
+                    <div class="col-sm-12 col-lg-9 border-end">
+                        <div class="py-4 px-2">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <h4 class="section-title">top selling items</h4>
+
+                                <ul class="m-0 p-0 section-tab-holder">
+                                    <li class="list-unstyled">
+                                        <a href="" class="not-mobile text-decoration-none section-tab active">computer & accessories</a>
+                                    </li>
+
+                                    <li class="list-unstyled">
+                                        <a href="" class="not-mobile text-decoration-none section-tab">phones & tablet</a>
+                                    </li>
+
+                                    <li class="list-unstyled">
+                                        <a href="" class="not-mobile text-decoration-none section-tab">electronics</a>
+                                    </li>
+                                </ul>
+
+                                <div class="d-flex align-items-center ms-2">
+                                    <a href="" class="view-more-link">
+                                        <span>view all</span>
+                                        <span class="icon">
+                                            <ion-icon name="arrow-forward-outline"></ion-icon>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Computer  -->
+                            <div class="section-tab-menu active">
+                                <div class="mt-4">
+                                    <div class="swiper-container second">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img src="./img/4g.png" class="slider-image" alt="">
+
+                                                <div class="slide-content white"></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="swiper-btn swiper-btn-left">
+                                            <ion-icon name="chevron-back-outline"></ion-icon>
+                                        </div>
+                                        <div class="swiper-btn swiper-btn-right">
+                                            <ion-icon name="chevron-forward-outline"></ion-icon>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="mt-4">
+                                    <div class="d-flex align-items-center">
+                                        <ul class="m-0 p-0 section-tab-holder justify-content-start">
+                                            <li class="list-unstyled">
+                                                <a href="" class="text-decoration-none section-sub-tab active">Bestsellers</a>
+                                            </li>
+
+                                            <li class="list-unstyled">
+                                                <a href="" class="text-decoration-none section-sub-tab">new arrivals</a>
+                                            </li>
+
+                                            <li class="list-unstyled">
+                                                <a href="" class="text-decoration-none section-sub-tab">best ratings</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <!-- Bestsellers -->
+                                    <div class="section-tab-sub-menu py-3 mt-2">
+                                        <div class="row fixed-width">
+                                            <div class="col-3">
+                                                <a href="" class="shop-item">
+                                                    <img src="./img/4ktv.png" class="shop-img" alt="">
+                                                    <h4 class="item-name">Television HDR smart</h4>
+                                                    <div class="item-rating">
+                                                        <div class="icon ms-0">
+                                                            <ion-icon name="star-sharp"></ion-icon>
+                                                        </div>
+
+                                                        <div class="icon">
+                                                            <ion-icon name="star-sharp"></ion-icon>
+                                                        </div>
+
+                                                        <div class="icon">
+                                                            <ion-icon name="star-sharp"></ion-icon>
+                                                        </div>
+
+                                                        <div class="icon">
+                                                            <ion-icon name="star-sharp"></ion-icon>
+                                                        </div>
+
+                                                        <div class="icon">
+                                                            <ion-icon name="star-sharp"></ion-icon>
+                                                        </div>
+                                                    </div>
+                                                    <h5 class="item-price">NGN 150,000</h5>
+                                                </a>
+                                            </div>
+
+                                            <div class="col-3">
+                                                <a href="" class="shop-item">
+                                                    <img src="./img/headphone.png" class="shop-img" alt="">
+                                                    <h4 class="item-name">headphone bluetooth</h4>
+                                                    <div class="item-rating">
+                                                        <div class="icon ms-0">
+                                                            <ion-icon name="star-sharp"></ion-icon>
+                                                        </div>
+
+                                                        <div class="icon">
+                                                            <ion-icon name="star-sharp"></ion-icon>
+                                                        </div>
+
+                                                        <div class="icon">
+                                                            <ion-icon name="star-sharp"></ion-icon>
+                                                        </div>
+
+                                                        <div class="icon">
+                                                            <ion-icon name="star-sharp"></ion-icon>
+                                                        </div>
+
+                                                        <div class="icon">
+                                                            <ion-icon name="star-sharp"></ion-icon>
+                                                        </div>
+                                                    </div>
+                                                    <h5 class="item-price">NGN 150,000</h5>
+                                                </a>
+                                            </div>
+
+                                            <div class="col-3">
+                                                <a href="" class="shop-item">
+                                                    <img src="./img/z-laptop.png" class="shop-img" alt="">
+                                                    <h4 class="item-name">ZenBook 3 ultra 8GB</h4>
+                                                    <div class="item-rating">
+                                                        <div class="icon ms-0">
+                                                            <ion-icon name="star-sharp"></ion-icon>
+                                                        </div>
+
+                                                        <div class="icon">
+                                                            <ion-icon name="star-sharp"></ion-icon>
+                                                        </div>
+
+                                                        <div class="icon">
+                                                            <ion-icon name="star-sharp"></ion-icon>
+                                                        </div>
+
+                                                        <div class="icon">
+                                                            <ion-icon name="star-sharp"></ion-icon>
+                                                        </div>
+
+                                                        <div class="icon">
+                                                            <ion-icon name="star-sharp"></ion-icon>
+                                                        </div>
+                                                    </div>
+                                                    <h5 class="item-price">NGN 150,000</h5>
+                                                </a>
+                                            </div>
+
+                                            <div class="col-3">
+                                                <a href="" class="shop-item">
+                                                    <img src="./img/watch.png" class="shop-img" alt="">
+                                                    <h4 class="item-name">smartwatch 2.0</h4>
+                                                    <div class="item-rating">
+                                                        <div class="icon ms-0">
+                                                            <ion-icon name="star-sharp"></ion-icon>
+                                                        </div>
+
+                                                        <div class="icon">
+                                                            <ion-icon name="star-sharp"></ion-icon>
+                                                        </div>
+
+                                                        <div class="icon">
+                                                            <ion-icon name="star-sharp"></ion-icon>
+                                                        </div>
+
+                                                        <div class="icon">
+                                                            <ion-icon name="star-sharp"></ion-icon>
+                                                        </div>
+
+                                                        <div class="icon">
+                                                            <ion-icon name="star-sharp"></ion-icon>
+                                                        </div>
+                                                    </div>
+                                                    <h5 class="item-price">NGN 150,000</h5>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Phones And Tabs  -->
+                            <div class="section-tab-menu">
+                                <div class="mt-4">
+                                    <div class="swiper-container second">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img src="./img/bg.png" class="slider-image" alt="">
+
+                                                <div class="slide-content white"></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="swiper-btn swiper-btn-left">
+                                            <ion-icon name="chevron-back-outline"></ion-icon>
+                                        </div>
+                                        <div class="swiper-btn swiper-btn-right">
+                                            <ion-icon name="chevron-forward-outline"></ion-icon>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="mt-4">
+                                    <div class="d-flex align-items-center">
+                                        <ul class="m-0 p-0 section-tab-holder justify-content-start">
+                                            <li class="list-unstyled">
+                                                <a href="" class="text-decoration-none section-sub-tab active">Bestsellers</a>
+                                            </li>
+
+                                            <li class="list-unstyled">
+                                                <a href="" class="text-decoration-none section-sub-tab">new arrivals</a>
+                                            </li>
+
+                                            <li class="list-unstyled">
+                                                <a href="" class="text-decoration-none section-sub-tab">best ratings</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <!-- Bestsellers -->
+                                    <div class="section-tab-sub-menu py-3 mt-2">
+                                        <div class="row fixed-width">
+
+                                            <div class="col-3">
+                                                <a href="" class="shop-item">
+                                                    <img src="./img/watch.png" class="shop-img" alt="">
+                                                    <h4 class="item-name">smartwatch 2.0</h4>
+                                                    <div class="item-rating">
+                                                        <div class="icon ms-0">
+                                                            <ion-icon name="star-sharp"></ion-icon>
+                                                        </div>
+
+                                                        <div class="icon">
+                                                            <ion-icon name="star-sharp"></ion-icon>
+                                                        </div>
+
+                                                        <div class="icon">
+                                                            <ion-icon name="star-sharp"></ion-icon>
+                                                        </div>
+
+                                                        <div class="icon">
+                                                            <ion-icon name="star-sharp"></ion-icon>
+                                                        </div>
+
+                                                        <div class="icon">
+                                                            <ion-icon name="star-sharp"></ion-icon>
+                                                        </div>
+                                                    </div>
+                                                    <h5 class="item-price">NGN 150,000</h5>
+                                                </a>
+                                            </div>
+
+                                            <div class="col-3">
+                                                <a href="" class="shop-item">
+                                                    <img src="./img/z-laptop.png" class="shop-img" alt="">
+                                                    <h4 class="item-name">ZenBook 3 ultra 8GB</h4>
+                                                    <div class="item-rating">
+                                                        <div class="icon ms-0">
+                                                            <ion-icon name="star-sharp"></ion-icon>
+                                                        </div>
+
+                                                        <div class="icon">
+                                                            <ion-icon name="star-sharp"></ion-icon>
+                                                        </div>
+
+                                                        <div class="icon">
+                                                            <ion-icon name="star-sharp"></ion-icon>
+                                                        </div>
+
+                                                        <div class="icon">
+                                                            <ion-icon name="star-sharp"></ion-icon>
+                                                        </div>
+
+                                                        <div class="icon">
+                                                            <ion-icon name="star-sharp"></ion-icon>
+                                                        </div>
+                                                    </div>
+                                                    <h5 class="item-price">NGN 150,000</h5>
+                                                </a>
+                                            </div>
+
+                                            <div class="col-3">
+                                                <a href="" class="shop-item">
+                                                    <img src="./img/headphone.png" class="shop-img" alt="">
+                                                    <h4 class="item-name">headphone bluetooth</h4>
+                                                    <div class="item-rating">
+                                                        <div class="icon ms-0">
+                                                            <ion-icon name="star-sharp"></ion-icon>
+                                                        </div>
+
+                                                        <div class="icon">
+                                                            <ion-icon name="star-sharp"></ion-icon>
+                                                        </div>
+
+                                                        <div class="icon">
+                                                            <ion-icon name="star-sharp"></ion-icon>
+                                                        </div>
+
+                                                        <div class="icon">
+                                                            <ion-icon name="star-sharp"></ion-icon>
+                                                        </div>
+
+                                                        <div class="icon">
+                                                            <ion-icon name="star-sharp"></ion-icon>
+                                                        </div>
+                                                    </div>
+                                                    <h5 class="item-price">NGN 150,000</h5>
+                                                </a>
+                                            </div>
+
+                                            <div class="col-3">
+                                                <a href="" class="shop-item">
+                                                    <img src="./img/4ktv.png" class="shop-img" alt="">
+                                                    <h4 class="item-name">Television HDR smart</h4>
+                                                    <div class="item-rating">
+                                                        <div class="icon ms-0">
+                                                            <ion-icon name="star-sharp"></ion-icon>
+                                                        </div>
+
+                                                        <div class="icon">
+                                                            <ion-icon name="star-sharp"></ion-icon>
+                                                        </div>
+
+                                                        <div class="icon">
+                                                            <ion-icon name="star-sharp"></ion-icon>
+                                                        </div>
+
+                                                        <div class="icon">
+                                                            <ion-icon name="star-sharp"></ion-icon>
+                                                        </div>
+
+                                                        <div class="icon">
+                                                            <ion-icon name="star-sharp"></ion-icon>
+                                                        </div>
+                                                    </div>
+                                                    <h5 class="item-price">NGN 150,000</h5>
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Electronics  -->
+                            <div class="section-tab-menu">
+                                <div class="mt-4">
+                                    <div class="swiper-container second">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img src="./img/stethoscope.png" class="slider-image" alt="">
+
+                                                <div class="slide-content white"></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="swiper-btn swiper-btn-left">
+                                            <ion-icon name="chevron-back-outline"></ion-icon>
+                                        </div>
+                                        <div class="swiper-btn swiper-btn-right">
+                                            <ion-icon name="chevron-forward-outline"></ion-icon>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="mt-4">
+                                    <div class="d-flex align-items-center">
+                                        <ul class="m-0 p-0 section-tab-holder justify-content-start">
+                                            <li class="list-unstyled">
+                                                <a href="" class="text-decoration-none section-sub-tab active">Bestsellers</a>
+                                            </li>
+
+                                            <li class="list-unstyled">
+                                                <a href="" class="text-decoration-none section-sub-tab">new arrivals</a>
+                                            </li>
+
+                                            <li class="list-unstyled">
+                                                <a href="" class="text-decoration-none section-sub-tab">best ratings</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <!-- Bestsellers -->
+                                    <div class="section-tab-sub-menu py-3 mt-2">
+                                        <div class="row fixed-width">
+
+                                            <div class="col-3">
+                                                <a href="" class="shop-item">
+                                                    <img src="./img/headphone.png" class="shop-img" alt="">
+                                                    <h4 class="item-name">headphone bluetooth</h4>
+                                                    <div class="item-rating">
+                                                        <div class="icon ms-0">
+                                                            <ion-icon name="star-sharp"></ion-icon>
+                                                        </div>
+
+                                                        <div class="icon">
+                                                            <ion-icon name="star-sharp"></ion-icon>
+                                                        </div>
+
+                                                        <div class="icon">
+                                                            <ion-icon name="star-sharp"></ion-icon>
+                                                        </div>
+
+                                                        <div class="icon">
+                                                            <ion-icon name="star-sharp"></ion-icon>
+                                                        </div>
+
+                                                        <div class="icon">
+                                                            <ion-icon name="star-sharp"></ion-icon>
+                                                        </div>
+                                                    </div>
+                                                    <h5 class="item-price">NGN 150,000</h5>
+                                                </a>
+                                            </div>
+
+                                            <div class="col-3">
+                                                <a href="" class="shop-item">
+                                                    <img src="./img/4ktv.png" class="shop-img" alt="">
+                                                    <h4 class="item-name">Television HDR smart</h4>
+                                                    <div class="item-rating">
+                                                        <div class="icon ms-0">
+                                                            <ion-icon name="star-sharp"></ion-icon>
+                                                        </div>
+
+                                                        <div class="icon">
+                                                            <ion-icon name="star-sharp"></ion-icon>
+                                                        </div>
+
+                                                        <div class="icon">
+                                                            <ion-icon name="star-sharp"></ion-icon>
+                                                        </div>
+
+                                                        <div class="icon">
+                                                            <ion-icon name="star-sharp"></ion-icon>
+                                                        </div>
+
+                                                        <div class="icon">
+                                                            <ion-icon name="star-sharp"></ion-icon>
+                                                        </div>
+                                                    </div>
+                                                    <h5 class="item-price">NGN 150,000</h5>
+                                                </a>
+                                            </div>
+
+                                            <div class="col-3">
+                                                <a href="" class="shop-item">
+                                                    <img src="./img/watch.png" class="shop-img" alt="">
+                                                    <h4 class="item-name">smartwatch 2.0</h4>
+                                                    <div class="item-rating">
+                                                        <div class="icon ms-0">
+                                                            <ion-icon name="star-sharp"></ion-icon>
+                                                        </div>
+
+                                                        <div class="icon">
+                                                            <ion-icon name="star-sharp"></ion-icon>
+                                                        </div>
+
+                                                        <div class="icon">
+                                                            <ion-icon name="star-sharp"></ion-icon>
+                                                        </div>
+
+                                                        <div class="icon">
+                                                            <ion-icon name="star-sharp"></ion-icon>
+                                                        </div>
+
+                                                        <div class="icon">
+                                                            <ion-icon name="star-sharp"></ion-icon>
+                                                        </div>
+                                                    </div>
+                                                    <h5 class="item-price">NGN 150,000</h5>
+                                                </a>
+                                            </div>
+
+                                            <div class="col-3">
+                                                <a href="" class="shop-item">
+                                                    <img src="./img/z-laptop.png" class="shop-img" alt="">
+                                                    <h4 class="item-name">ZenBook 3 ultra 8GB</h4>
+                                                    <div class="item-rating">
+                                                        <div class="icon ms-0">
+                                                            <ion-icon name="star-sharp"></ion-icon>
+                                                        </div>
+
+                                                        <div class="icon">
+                                                            <ion-icon name="star-sharp"></ion-icon>
+                                                        </div>
+
+                                                        <div class="icon">
+                                                            <ion-icon name="star-sharp"></ion-icon>
+                                                        </div>
+
+                                                        <div class="icon">
+                                                            <ion-icon name="star-sharp"></ion-icon>
+                                                        </div>
+
+                                                        <div class="icon">
+                                                            <ion-icon name="star-sharp"></ion-icon>
+                                                        </div>
+                                                    </div>
+                                                    <h5 class="item-price">NGN 150,000</h5>
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-lg-3">
+                        <div class="py-4 px-0">
+                            <div class="d-flex align-items-center">
+                                <div class="icon big text-orange">
+                                    <ion-icon name="gift-outline"></ion-icon>
+                                </div>
+                                <div class="ms-2">
+                                    <h4 class="section-title">special offers</h4>
+                                    <h5 class="date"> offer ends in <span class="data-time">10 days, 10:59:10</span></h5>
+                                </div>
+                            </div>
+
+                            <div class="row m-0 mt-4">
+                                <div class="col-sm-12 col-md-6 col-lg-12 side-card-tab">
+                                    <a href="" class="text-decoration-none side-card">
+                                        <img src="./img/mac.png" alt="" class="side-card-img">
+
+                                        <div class="ms-3">
+                                            <h4 class="item-name mt-0">MacBook pro</h4>
+                                            <div class="item-rating">
+                                                <div class="icon ms-0">
+                                                    <ion-icon name="star-sharp"></ion-icon>
+                                                </div>
+
+                                                <div class="icon">
+                                                    <ion-icon name="star-sharp"></ion-icon>
+                                                </div>
+
+                                                <div class="icon">
+                                                    <ion-icon name="star-sharp"></ion-icon>
+                                                </div>
+
+                                                <div class="icon">
+                                                    <ion-icon name="star-sharp"></ion-icon>
+                                                </div>
+
+                                                <div class="icon">
+                                                    <ion-icon name="star-sharp"></ion-icon>
+                                                </div>
+                                            </div>
+                                            <h5 class="item-price">NGN 150,000</h5>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col-sm-12 col-md-6 col-lg-12 side-card-tab">
+                                    <a href="" class="text-decoration-none side-card">
+                                        <img src="./img/z-laptop.png" alt="" class="side-card-img">
+
+                                        <div class="ms-3">
+                                            <h4 class="item-name mt-0">ZenBook 3 ultra 8GB</h4>
+                                            <div class="item-rating">
+                                                <div class="icon ms-0">
+                                                    <ion-icon name="star-sharp"></ion-icon>
+                                                </div>
+
+                                                <div class="icon">
+                                                    <ion-icon name="star-sharp"></ion-icon>
+                                                </div>
+
+                                                <div class="icon">
+                                                    <ion-icon name="star-sharp"></ion-icon>
+                                                </div>
+
+                                                <div class="icon">
+                                                    <ion-icon name="star-sharp"></ion-icon>
+                                                </div>
+
+                                                <div class="icon">
+                                                    <ion-icon name="star-sharp"></ion-icon>
+                                                </div>
+                                            </div>
+                                            <h5 class="item-price">NGN 150,000</h5>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col-sm-12 col-md-6 col-lg-12 side-card-tab">
+                                    <a href="" class="text-decoration-none side-card">
+                                        <img src="./img/powerbank.png" alt="" class="side-card-img">
+
+                                        <div class="ms-3">
+                                            <h4 class="item-name mt-0">photo personal printer</h4>
+                                            <div class="item-rating">
+                                                <div class="icon ms-0">
+                                                    <ion-icon name="star-sharp"></ion-icon>
+                                                </div>
+
+                                                <div class="icon">
+                                                    <ion-icon name="star-sharp"></ion-icon>
+                                                </div>
+
+                                                <div class="icon">
+                                                    <ion-icon name="star-sharp"></ion-icon>
+                                                </div>
+
+                                                <div class="icon">
+                                                    <ion-icon name="star-sharp"></ion-icon>
+                                                </div>
+
+                                                <div class="icon">
+                                                    <ion-icon name="star-sharp"></ion-icon>
+                                                </div>
+                                            </div>
+                                            <h5 class="item-price">NGN 150,000</h5>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col-sm-12 col-md-6 col-lg-12 side-card-tab">
+                                    <a href="" class="text-decoration-none side-card">
+                                        <img src="./img/hometheatre.png" alt="" class="side-card-img">
+
+                                        <div class="ms-3">
+                                            <h4 class="item-name mt-0">home theatre & audio</h4>
+                                            <div class="item-rating">
+                                                <div class="icon ms-0">
+                                                    <ion-icon name="star-sharp"></ion-icon>
+                                                </div>
+
+                                                <div class="icon">
+                                                    <ion-icon name="star-sharp"></ion-icon>
+                                                </div>
+
+                                                <div class="icon">
+                                                    <ion-icon name="star-sharp"></ion-icon>
+                                                </div>
+
+                                                <div class="icon">
+                                                    <ion-icon name="star-sharp"></ion-icon>
+                                                </div>
+
+                                                <div class="icon">
+                                                    <ion-icon name="star-sharp"></ion-icon>
+                                                </div>
+                                            </div>
+                                            <h5 class="item-price">NGN 150,000</h5>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="d-flex align-items-center mt-3">
+                                <a href="" class="view-more-link">
+                                    <span>view all</span>
+                                    <span class="icon">
+                                        <ion-icon name="arrow-forward-outline"></ion-icon>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- For Desktop -->
+        <section class="w-100 mt-3 not-mobile py-2 ">
+            <div class="e-container">
+                <div class="row m-0 rounded bg-white shadow-sm aos-item aos-animate aos-init" data-aos="fade-up">
+                    <div class="col-12">
+                        <div class="py-4 px-2">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <h4 class="section-title longer">browse our categories</h4>
+
+                                <div class="flex-grow-1 d-flex align-items-center px-2">
+                                    <div class="hr"></div>
+                                </div>
+
+                                <div class="d-flex align-items-center ms-2">
+                                    <a href="" class="view-more-link">
+                                        <span>view all</span>
+                                        <span class="icon">
+                                            <ion-icon name="arrow-forward-outline"></ion-icon>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-4">
+                            <div class="swiper-container fluid">
+                                <div class="swiper-wrapper">
+
+                                    <!-- Slides -->
+                                    <div class="swiper-slide">
+                                        <div class="row justify-content-center">
+                                            <div class="col-2">
+                                                <a href="" class="text-decoration-none d-block category-item">
+                                                    <div class="category-img">
+                                                        <img src="./img/4ktv.png" alt="">
+                                                    </div>
+
+                                                    <div class="category-text">
+                                                        <h4 class="item-name text-center text-uppercase fw-bold">electronics</h4>
+                                                        <h4 class="item-price text-center text-capitalize">200 products</h4>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                            <div class="col-2">
+                                                <a href="" class="text-decoration-none d-block category-item">
+                                                    <div class="category-img">
+                                                        <img src="./img/teth.png" alt="">
+                                                    </div>
+
+                                                    <div class="category-text">
+                                                        <h4 class="item-name text-center text-uppercase fw-bold">health & beauty</h4>
+                                                        <h4 class="item-price text-center text-capitalize">120 products</h4>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                            <div class="col-2">
+                                                <a href="" class="text-decoration-none d-block category-item">
+                                                    <div class="category-img">
+                                                        <img src="./img/chair.png" alt="">
+                                                    </div>
+
+                                                    <div class="category-text">
+                                                        <h4 class="item-name text-center text-uppercase fw-bold">home & office</h4>
+                                                        <h4 class="item-price text-center text-capitalize">40 products</h4>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                            <div class="col-2">
+                                                <a href="" class="text-decoration-none d-block category-item">
+                                                    <div class="category-img">
+                                                        <img src="./img/ps4.png" alt="">
+                                                    </div>
+
+                                                    <div class="category-text">
+                                                        <h4 class="item-name text-center text-uppercase fw-bold">gaming</h4>
+                                                        <h4 class="item-price text-center text-capitalize">104 products</h4>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                            <div class="col-2">
+                                                <a href="" class="text-decoration-none d-block category-item">
+                                                    <div class="category-img">
+                                                        <img src="./img/babies.png" alt="">
+                                                    </div>
+
+                                                    <div class="category-text">
+                                                        <h4 class="item-name text-center text-uppercase fw-bold">baby products</h4>
+                                                        <h4 class="item-price text-center text-capitalize">210 products</h4>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-btn swiper-btn-left bg-orange">
+                                    <ion-icon name="chevron-back-outline"></ion-icon>
+                                </div>
+
+                                <div class="swiper-btn swiper-btn-right bg-orange">
+                                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mobile -->
+        <!-- <section class="mt-3 mobile py-2 ">
+            <div class="e-container">
+                <div class="row m-0 rounded bg-white shadow-sm aos-item aos-animate aos-init" data-aos="fade-up">
+                    <div class="col-12">
+                        <div class="py-4 px-2">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <h4 class="section-title">browse our categories</h4>
+
+                                <div class="flex-grow-1 d-flex align-items-center px-2">
+                                    <div class="hr"></div>
+                                </div>
+
+                                <div class="d-flex align-items-center ms-2">
+                                    <a href="" class="view-more-link">
+                                        <span>view all</span>
+                                        <span class="icon">
+                                            <ion-icon name="arrow-forward-outline"></ion-icon>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row m-0 pb-4 mt-3">
+                            <div class="col-12">
+                                <div class="row">
+                                    <div class="col-6 text-center">
+                                        <a href="" class="d-block text-decoration-none text-center">
+                                            <div class="category-img for-mobile">
+                                                <img src="./img/4ktv.png" class="shop-img" alt="">
+                                            </div>
+                                            <h4 class="item-name text-center text-uppercase fw-bold">electronics</h4>
+                                            <h4 class="item-price text-center text-capitalize">200 products</h4>
+                                        </a>
+                                    </div>
+
+                                    <div class="col-6">
+                                        <a href="" class="d-block text-decoration-none">
+                                            <div class="category-img">
+                                                <img src="./img/teth.png" class="shop-img" alt="">
+                                            </div>
+                                            <h4 class="item-name text-center text-uppercase fw-bold">health & beauty</h4>
+                                            <h4 class="item-price text-center text-capitalize">120 products</h4>
+                                        </a>
+                                    </div>
+
+                                    <div class="col-6">
+                                        <a href="" class="d-block text-decoration-none">
+                                            <div class="category-img">
+                                                <img src="./img/chair.png" class="shop-img" alt="">
+                                            </div>
+                                        </a>
+                                        <h4 class="item-name text-center text-uppercase fw-bold">home & office</h4>
+                                        <h4 class="item-price text-center text-capitalize">40 products</h4>
+                                    </div>
+
+                                    <div class="col-6">
+                                        <a href="" class="d-block text-decoration-none">
+                                            <div class="category-img">
+                                                <img src="./img/chair.png" class="shop-img" alt="">
+                                            </div>
+                                            <h4 class="item-name text-center text-uppercase fw-bold">home & office</h4>
+                                            <h4 class="item-price text-center text-capitalize">40 products</h4>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+        <!-- New Collections -->
+        <section class="w-100 mt-3 py-2">
+            <div class="e-container">
+                <div class="row m-0 rounded bg-white shadow-sm aos-item aos-animate aos-init" data-aos="fade-up">
+                    <div class="col-12 border-end">
+                        <div class="py-4 px-2">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <h4 class="section-title">new collections</h4>
+
+                                <ul class="m-0 p-0 section-tab-holder">
+                                    <li class="list-unstyled">
+                                        <a href="" class="not-mobile text-decoration-none section-tab active">computer & accessories</a>
+                                    </li>
+
+                                    <li class="list-unstyled">
+                                        <a href="" class="not-mobile text-decoration-none section-tab">phones & tablet</a>
+                                    </li>
+
+                                    <li class="list-unstyled">
+                                        <a href="" class="not-mobile text-decoration-none section-tab">electronics</a>
+                                    </li>
+                                </ul>
+
+                                <div class="d-flex align-items-center ms-2">
+                                    <a href="" class="view-more-link">
+                                        <span>view all</span>
+                                        <span class="icon">
+                                            <ion-icon name="arrow-forward-outline"></ion-icon>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+
+
+                            <!-- Computer  -->
+                            <div class="section-tab-menu active">
+                                <div class="mt-4">
+                                    <div class="swiper-container second">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img src="./img/4g.png" class="slider-image" alt="">
+
+                                                <div class="slide-content white"></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="swiper-btn swiper-btn-left">
+                                            <ion-icon name="chevron-back-outline"></ion-icon>
+                                        </div>
+                                        <div class="swiper-btn swiper-btn-right">
+                                            <ion-icon name="chevron-forward-outline"></ion-icon>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="mt-4">
+                                    <div class="d-flex align-items-center">
+                                        <ul class="m-0 p-0 section-tab-holder justify-content-start">
+                                            <li class="list-unstyled">
+                                                <a href="" class="text-decoration-none section-sub-tab active">Bestsellers</a>
+                                            </li>
+
+                                            <li class="list-unstyled">
+                                                <a href="" class="text-decoration-none section-sub-tab">new arrivals</a>
+                                            </li>
+
+                                            <li class="list-unstyled">
+                                                <a href="" class="text-decoration-none section-sub-tab">best ratings</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <!-- Bestsellers -->
+                                    <div class="position-relative px-2">
+                                        <div class="section-tab-sub-menu py-3 mt-2">
+                                            <div class="caro-row fixed-width position-relative">
+                                                <div class="col-2">
+                                                    <a href="" class="shop-item">
+                                                        <img src="./img/4ktv.png" class="shop-img" alt="">
+                                                        <h4 class="item-name">Television HDR smart</h4>
+                                                        <div class="item-rating">
+                                                            <div class="icon ms-0">
+                                                                <ion-icon name="star-sharp"></ion-icon>
+                                                            </div>
+
+                                                            <div class="icon">
+                                                                <ion-icon name="star-sharp"></ion-icon>
+                                                            </div>
+
+                                                            <div class="icon">
+                                                                <ion-icon name="star-sharp"></ion-icon>
+                                                            </div>
+
+                                                            <div class="icon">
+                                                                <ion-icon name="star-sharp"></ion-icon>
+                                                            </div>
+
+                                                            <div class="icon">
+                                                                <ion-icon name="star-sharp"></ion-icon>
+                                                            </div>
+                                                        </div>
+                                                        <h5 class="item-price">NGN 150,000</h5>
+                                                    </a>
+                                                </div>
+
+                                                <div class="col-2">
+                                                    <a href="" class="shop-item">
+                                                        <img src="./img/headphone.png" class="shop-img" alt="">
+                                                        <h4 class="item-name">headphone bluetooth</h4>
+                                                        <div class="item-rating">
+                                                            <div class="icon ms-0">
+                                                                <ion-icon name="star-sharp"></ion-icon>
+                                                            </div>
+
+                                                            <div class="icon">
+                                                                <ion-icon name="star-sharp"></ion-icon>
+                                                            </div>
+
+                                                            <div class="icon">
+                                                                <ion-icon name="star-sharp"></ion-icon>
+                                                            </div>
+
+                                                            <div class="icon">
+                                                                <ion-icon name="star-sharp"></ion-icon>
+                                                            </div>
+
+                                                            <div class="icon">
+                                                                <ion-icon name="star-sharp"></ion-icon>
+                                                            </div>
+                                                        </div>
+                                                        <h5 class="item-price">NGN 150,000</h5>
+                                                    </a>
+                                                </div>
+
+                                                <div class="col-2">
+                                                    <a href="" class="shop-item">
+                                                        <img src="./img/headphone.png" class="shop-img" alt="">
+                                                        <h4 class="item-name">headphone bluetooth</h4>
+                                                        <div class="item-rating">
+                                                            <div class="icon ms-0">
+                                                                <ion-icon name="star-sharp"></ion-icon>
+                                                            </div>
+
+                                                            <div class="icon">
+                                                                <ion-icon name="star-sharp"></ion-icon>
+                                                            </div>
+
+                                                            <div class="icon">
+                                                                <ion-icon name="star-sharp"></ion-icon>
+                                                            </div>
+
+                                                            <div class="icon">
+                                                                <ion-icon name="star-sharp"></ion-icon>
+                                                            </div>
+
+                                                            <div class="icon">
+                                                                <ion-icon name="star-sharp"></ion-icon>
+                                                            </div>
+                                                        </div>
+                                                        <h5 class="item-price">NGN 150,000</h5>
+                                                    </a>
+                                                </div>
+
+                                                <div class="col-2">
+                                                    <a href="" class="shop-item">
+                                                        <img src="./img/z-laptop.png" class="shop-img" alt="">
+                                                        <h4 class="item-name">ZenBook 3 ultra 8GB</h4>
+                                                        <div class="item-rating">
+                                                            <div class="icon ms-0">
+                                                                <ion-icon name="star-sharp"></ion-icon>
+                                                            </div>
+
+                                                            <div class="icon">
+                                                                <ion-icon name="star-sharp"></ion-icon>
+                                                            </div>
+
+                                                            <div class="icon">
+                                                                <ion-icon name="star-sharp"></ion-icon>
+                                                            </div>
+
+                                                            <div class="icon">
+                                                                <ion-icon name="star-sharp"></ion-icon>
+                                                            </div>
+
+                                                            <div class="icon">
+                                                                <ion-icon name="star-sharp"></ion-icon>
+                                                            </div>
+                                                        </div>
+                                                        <h5 class="item-price">NGN 150,000</h5>
+                                                    </a>
+                                                </div>
+
+                                                <div class="col-2">
+                                                    <a href="" class="shop-item">
+                                                        <img src="./img/watch.png" class="shop-img" alt="">
+                                                        <h4 class="item-name">smartwatch 2.0</h4>
+                                                        <div class="item-rating">
+                                                            <div class="icon ms-0">
+                                                                <ion-icon name="star-sharp"></ion-icon>
+                                                            </div>
+
+                                                            <div class="icon">
+                                                                <ion-icon name="star-sharp"></ion-icon>
+                                                            </div>
+
+                                                            <div class="icon">
+                                                                <ion-icon name="star-sharp"></ion-icon>
+                                                            </div>
+
+                                                            <div class="icon">
+                                                                <ion-icon name="star-sharp"></ion-icon>
+                                                            </div>
+
+                                                            <div class="icon">
+                                                                <ion-icon name="star-sharp"></ion-icon>
+                                                            </div>
+                                                        </div>
+                                                        <h5 class="item-price">NGN 150,000</h5>
+                                                    </a>
+                                                </div>
+
+                                                <div class="col-2">
+                                                    <a href="" class="shop-item">
+                                                        <img src="./img/watch.png" class="shop-img" alt="">
+                                                        <h4 class="item-name">smartwatch 2.0</h4>
+                                                        <div class="item-rating">
+                                                            <div class="icon ms-0">
+                                                                <ion-icon name="star-sharp"></ion-icon>
+                                                            </div>
+
+                                                            <div class="icon">
+                                                                <ion-icon name="star-sharp"></ion-icon>
+                                                            </div>
+
+                                                            <div class="icon">
+                                                                <ion-icon name="star-sharp"></ion-icon>
+                                                            </div>
+
+                                                            <div class="icon">
+                                                                <ion-icon name="star-sharp"></ion-icon>
+                                                            </div>
+
+                                                            <div class="icon">
+                                                                <ion-icon name="star-sharp"></ion-icon>
+                                                            </div>
+                                                        </div>
+                                                        <h5 class="item-price">NGN 150,000</h5>
+                                                    </a>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="swiper-btn swiper-btn-left bg-orange scroll-left">
+                                            <ion-icon name="chevron-back-outline"></ion-icon>
+                                        </div>
+
+                                        <div class="swiper-btn swiper-btn-right bg-orange scroll-right">
+                                            <ion-icon name="chevron-forward-outline"></ion-icon>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recommendations -->
+        <section class="w-100 mt-3 py-2">
+            <div class="e-container">
+                <div class="row m-0 rounded bg-white shadow-sm aos-item aos-animate aos-init" data-aos="fade-up">
+                    <div class="col-12 border-end">
+                        <div class="py-4 px-2">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <h4 class="section-title longer">Recommendations for you</h4>
+
+                                <div class="flex-grow-1 d-flex align-items-center px-2">
+                                    <div class="hr"></div>
+                                </div>
+
+                                <div class="d-flex align-items-center ms-2">
+                                    <a href="" class="view-more-link">
+                                        <span>view all</span>
+                                        <span class="icon">
+                                            <ion-icon name="arrow-forward-outline"></ion-icon>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Computer  -->
+                            <div class="section-tab-menu active">
+
+                                    <!-- Bestsellers -->
+                                    <div class="position-relative px-2">
+                                        <div class="section-tab-sub-menu py-3 mt-2">
+                                            <div class="caro-row fixed-width position-relative">
+                                                <div class="col-2">
+                                                    <a href="" class="shop-item">
+                                                        <img src="./img/4ktv.png" class="shop-img" alt="">
+                                                        <h4 class="item-name">Television HDR smart</h4>
+                                                        <div class="item-rating">
+                                                            <div class="icon ms-0">
+                                                                <ion-icon name="star-sharp"></ion-icon>
+                                                            </div>
+
+                                                            <div class="icon">
+                                                                <ion-icon name="star-sharp"></ion-icon>
+                                                            </div>
+
+                                                            <div class="icon">
+                                                                <ion-icon name="star-sharp"></ion-icon>
+                                                            </div>
+
+                                                            <div class="icon">
+                                                                <ion-icon name="star-sharp"></ion-icon>
+                                                            </div>
+
+                                                            <div class="icon">
+                                                                <ion-icon name="star-sharp"></ion-icon>
+                                                            </div>
+                                                        </div>
+                                                        <h5 class="item-price">NGN 150,000</h5>
+                                                    </a>
+                                                </div>
+
+                                                <div class="col-2">
+                                                    <a href="" class="shop-item">
+                                                        <img src="./img/headphone.png" class="shop-img" alt="">
+                                                        <h4 class="item-name">headphone bluetooth</h4>
+                                                        <div class="item-rating">
+                                                            <div class="icon ms-0">
+                                                                <ion-icon name="star-sharp"></ion-icon>
+                                                            </div>
+
+                                                            <div class="icon">
+                                                                <ion-icon name="star-sharp"></ion-icon>
+                                                            </div>
+
+                                                            <div class="icon">
+                                                                <ion-icon name="star-sharp"></ion-icon>
+                                                            </div>
+
+                                                            <div class="icon">
+                                                                <ion-icon name="star-sharp"></ion-icon>
+                                                            </div>
+
+                                                            <div class="icon">
+                                                                <ion-icon name="star-sharp"></ion-icon>
+                                                            </div>
+                                                        </div>
+                                                        <h5 class="item-price">NGN 150,000</h5>
+                                                    </a>
+                                                </div>
+
+                                                <div class="col-2">
+                                                    <a href="" class="shop-item">
+                                                        <img src="./img/headphone.png" class="shop-img" alt="">
+                                                        <h4 class="item-name">headphone bluetooth</h4>
+                                                        <div class="item-rating">
+                                                            <div class="icon ms-0">
+                                                                <ion-icon name="star-sharp"></ion-icon>
+                                                            </div>
+
+                                                            <div class="icon">
+                                                                <ion-icon name="star-sharp"></ion-icon>
+                                                            </div>
+
+                                                            <div class="icon">
+                                                                <ion-icon name="star-sharp"></ion-icon>
+                                                            </div>
+
+                                                            <div class="icon">
+                                                                <ion-icon name="star-sharp"></ion-icon>
+                                                            </div>
+
+                                                            <div class="icon">
+                                                                <ion-icon name="star-sharp"></ion-icon>
+                                                            </div>
+                                                        </div>
+                                                        <h5 class="item-price">NGN 150,000</h5>
+                                                    </a>
+                                                </div>
+
+                                                <div class="col-2">
+                                                    <a href="" class="shop-item">
+                                                        <img src="./img/z-laptop.png" class="shop-img" alt="">
+                                                        <h4 class="item-name">ZenBook 3 ultra 8GB</h4>
+                                                        <div class="item-rating">
+                                                            <div class="icon ms-0">
+                                                                <ion-icon name="star-sharp"></ion-icon>
+                                                            </div>
+
+                                                            <div class="icon">
+                                                                <ion-icon name="star-sharp"></ion-icon>
+                                                            </div>
+
+                                                            <div class="icon">
+                                                                <ion-icon name="star-sharp"></ion-icon>
+                                                            </div>
+
+                                                            <div class="icon">
+                                                                <ion-icon name="star-sharp"></ion-icon>
+                                                            </div>
+
+                                                            <div class="icon">
+                                                                <ion-icon name="star-sharp"></ion-icon>
+                                                            </div>
+                                                        </div>
+                                                        <h5 class="item-price">NGN 150,000</h5>
+                                                    </a>
+                                                </div>
+
+                                                <div class="col-2">
+                                                    <a href="" class="shop-item">
+                                                        <img src="./img/watch.png" class="shop-img" alt="">
+                                                        <h4 class="item-name">smartwatch 2.0</h4>
+                                                        <div class="item-rating">
+                                                            <div class="icon ms-0">
+                                                                <ion-icon name="star-sharp"></ion-icon>
+                                                            </div>
+
+                                                            <div class="icon">
+                                                                <ion-icon name="star-sharp"></ion-icon>
+                                                            </div>
+
+                                                            <div class="icon">
+                                                                <ion-icon name="star-sharp"></ion-icon>
+                                                            </div>
+
+                                                            <div class="icon">
+                                                                <ion-icon name="star-sharp"></ion-icon>
+                                                            </div>
+
+                                                            <div class="icon">
+                                                                <ion-icon name="star-sharp"></ion-icon>
+                                                            </div>
+                                                        </div>
+                                                        <h5 class="item-price">NGN 150,000</h5>
+                                                    </a>
+                                                </div>
+
+                                                <div class="col-2">
+                                                    <a href="" class="shop-item">
+                                                        <img src="./img/watch.png" class="shop-img" alt="">
+                                                        <h4 class="item-name">smartwatch 2.0</h4>
+                                                        <div class="item-rating">
+                                                            <div class="icon ms-0">
+                                                                <ion-icon name="star-sharp"></ion-icon>
+                                                            </div>
+
+                                                            <div class="icon">
+                                                                <ion-icon name="star-sharp"></ion-icon>
+                                                            </div>
+
+                                                            <div class="icon">
+                                                                <ion-icon name="star-sharp"></ion-icon>
+                                                            </div>
+
+                                                            <div class="icon">
+                                                                <ion-icon name="star-sharp"></ion-icon>
+                                                            </div>
+
+                                                            <div class="icon">
+                                                                <ion-icon name="star-sharp"></ion-icon>
+                                                            </div>
+                                                        </div>
+                                                        <h5 class="item-price">NGN 150,000</h5>
+                                                    </a>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="swiper-btn swiper-btn-left bg-orange scroll-left">
+                                            <ion-icon name="chevron-back-outline"></ion-icon>
+                                        </div>
+
+                                        <div class="swiper-btn swiper-btn-right bg-orange scroll-right">
+                                            <ion-icon name="chevron-forward-outline"></ion-icon>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Extras -->
+        <section class="w-100 mt-3 py-2">
+            <div class="e-container">
+                <div class="bg-white rounded shadow-sm px-4 py-4 aos-item aos-animate aos-init" data-aos="fade-up" >
+                    <div class="row">
+
+                        <!-- Featured Products -->
+                        <div class="col-sm-12 col-md-6 col-lg-3">
+                            <div class="py-4 px-0">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <h3 class="section-title">featured products</h3>
+
+                                    <div class="d-flex align-items-center mobile">
+                                        <a href="" class="view-more-link">
+                                            <span>view all</span>
+                                            <span class="icon">
+                                                <ion-icon name="arrow-forward-outline"></ion-icon>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="row m-0 mt-3">
+                                    <div class="col-sm-12 col-md-6 col-lg-12 side-card-tab">
+                                        <a href="" class="text-decoration-none side-card">
+                                            <img src="./img/mac.png" alt="" class="side-card-img">
+
+                                            <div class="ms-3">
+                                                <h4 class="item-name mt-0">MacBook pro</h4>
+                                                <div class="item-rating">
+                                                    <div class="icon ms-0">
+                                                        <ion-icon name="star-sharp"></ion-icon>
+                                                    </div>
+
+                                                    <div class="icon">
+                                                        <ion-icon name="star-sharp"></ion-icon>
+                                                    </div>
+
+                                                    <div class="icon">
+                                                        <ion-icon name="star-sharp"></ion-icon>
+                                                    </div>
+
+                                                    <div class="icon">
+                                                        <ion-icon name="star-sharp"></ion-icon>
+                                                    </div>
+
+                                                    <div class="icon">
+                                                        <ion-icon name="star-sharp"></ion-icon>
+                                                    </div>
+                                                </div>
+                                                <h5 class="item-price">NGN 150,000</h5>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="col-sm-12 col-md-6 col-lg-12 side-card-tab">
+                                        <a href="" class="text-decoration-none side-card">
+                                            <img src="./img/z-laptop.png" alt="" class="side-card-img">
+
+                                            <div class="ms-3">
+                                                <h4 class="item-name mt-0">ZenBook 3 ultra 8GB</h4>
+                                                <div class="item-rating">
+                                                    <div class="icon ms-0">
+                                                        <ion-icon name="star-sharp"></ion-icon>
+                                                    </div>
+
+                                                    <div class="icon">
+                                                        <ion-icon name="star-sharp"></ion-icon>
+                                                    </div>
+
+                                                    <div class="icon">
+                                                        <ion-icon name="star-sharp"></ion-icon>
+                                                    </div>
+
+                                                    <div class="icon">
+                                                        <ion-icon name="star-sharp"></ion-icon>
+                                                    </div>
+
+                                                    <div class="icon">
+                                                        <ion-icon name="star-sharp"></ion-icon>
+                                                    </div>
+                                                </div>
+                                                <h5 class="item-price">NGN 150,000</h5>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="col-sm-12 col-md-6 col-lg-12 side-card-tab">
+                                        <a href="" class="text-decoration-none side-card">
+                                            <img src="./img/powerbank.png" alt="" class="side-card-img">
+
+                                            <div class="ms-3">
+                                                <h4 class="item-name mt-0">photo personal printer</h4>
+                                                <div class="item-rating">
+                                                    <div class="icon ms-0">
+                                                        <ion-icon name="star-sharp"></ion-icon>
+                                                    </div>
+
+                                                    <div class="icon">
+                                                        <ion-icon name="star-sharp"></ion-icon>
+                                                    </div>
+
+                                                    <div class="icon">
+                                                        <ion-icon name="star-sharp"></ion-icon>
+                                                    </div>
+
+                                                    <div class="icon">
+                                                        <ion-icon name="star-sharp"></ion-icon>
+                                                    </div>
+
+                                                    <div class="icon">
+                                                        <ion-icon name="star-sharp"></ion-icon>
+                                                    </div>
+                                                </div>
+                                                <h5 class="item-price">NGN 150,000</h5>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="col-sm-12 col-md-6 col-lg-12 side-card-tab">
+                                        <a href="" class="text-decoration-none side-card">
+                                            <img src="./img/hometheatre.png" alt="" class="side-card-img">
+
+                                            <div class="ms-3">
+                                                <h4 class="item-name mt-0">home theatre & audio</h4>
+                                                <div class="item-rating">
+                                                    <div class="icon ms-0">
+                                                        <ion-icon name="star-sharp"></ion-icon>
+                                                    </div>
+
+                                                    <div class="icon">
+                                                        <ion-icon name="star-sharp"></ion-icon>
+                                                    </div>
+
+                                                    <div class="icon">
+                                                        <ion-icon name="star-sharp"></ion-icon>
+                                                    </div>
+
+                                                    <div class="icon">
+                                                        <ion-icon name="star-sharp"></ion-icon>
+                                                    </div>
+
+                                                    <div class="icon">
+                                                        <ion-icon name="star-sharp"></ion-icon>
+                                                    </div>
+                                                </div>
+                                                <h5 class="item-price">NGN 150,000</h5>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex align-items-center mt-3 not-mobile">
+                                    <a href="" class="view-more-link">
+                                        <span>view all</span>
+                                        <span class="icon">
+                                            <ion-icon name="arrow-forward-outline"></ion-icon>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Best Selling -->
+                        <div class="col-sm-12 col-md-6 col-lg-3">
+                            <div class="py-4 px-0">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <h3 class="section-title longer">best selling products</h3>
+
+                                    <div class="d-flex align-items-center mobile">
+                                        <a href="" class="view-more-link">
+                                            <span>view all</span>
+                                            <span class="icon">
+                                                <ion-icon name="arrow-forward-outline"></ion-icon>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="row m-0 mt-3">
+                                    <div class="col-sm-12 col-md-6 col-lg-12 side-card-tab">
+                                        <a href="" class="text-decoration-none side-card">
+                                            <img src="./img/mac.png" alt="" class="side-card-img">
+
+                                            <div class="ms-3">
+                                                <h4 class="item-name mt-0">MacBook pro</h4>
+                                                <div class="item-rating">
+                                                    <div class="icon ms-0">
+                                                        <ion-icon name="star-sharp"></ion-icon>
+                                                    </div>
+
+                                                    <div class="icon">
+                                                        <ion-icon name="star-sharp"></ion-icon>
+                                                    </div>
+
+                                                    <div class="icon">
+                                                        <ion-icon name="star-sharp"></ion-icon>
+                                                    </div>
+
+                                                    <div class="icon">
+                                                        <ion-icon name="star-sharp"></ion-icon>
+                                                    </div>
+
+                                                    <div class="icon">
+                                                        <ion-icon name="star-sharp"></ion-icon>
+                                                    </div>
+                                                </div>
+                                                <h5 class="item-price">NGN 150,000</h5>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="col-sm-12 col-md-6 col-lg-12 side-card-tab">
+                                        <a href="" class="text-decoration-none side-card">
+                                            <img src="./img/z-laptop.png" alt="" class="side-card-img">
+
+                                            <div class="ms-3">
+                                                <h4 class="item-name mt-0">ZenBook 3 ultra 8GB</h4>
+                                                <div class="item-rating">
+                                                    <div class="icon ms-0">
+                                                        <ion-icon name="star-sharp"></ion-icon>
+                                                    </div>
+
+                                                    <div class="icon">
+                                                        <ion-icon name="star-sharp"></ion-icon>
+                                                    </div>
+
+                                                    <div class="icon">
+                                                        <ion-icon name="star-sharp"></ion-icon>
+                                                    </div>
+
+                                                    <div class="icon">
+                                                        <ion-icon name="star-sharp"></ion-icon>
+                                                    </div>
+
+                                                    <div class="icon">
+                                                        <ion-icon name="star-sharp"></ion-icon>
+                                                    </div>
+                                                </div>
+                                                <h5 class="item-price">NGN 150,000</h5>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="col-sm-12 col-md-6 col-lg-12 side-card-tab">
+                                        <a href="" class="text-decoration-none side-card">
+                                            <img src="./img/powerbank.png" alt="" class="side-card-img">
+
+                                            <div class="ms-3">
+                                                <h4 class="item-name mt-0">photo personal printer</h4>
+                                                <div class="item-rating">
+                                                    <div class="icon ms-0">
+                                                        <ion-icon name="star-sharp"></ion-icon>
+                                                    </div>
+
+                                                    <div class="icon">
+                                                        <ion-icon name="star-sharp"></ion-icon>
+                                                    </div>
+
+                                                    <div class="icon">
+                                                        <ion-icon name="star-sharp"></ion-icon>
+                                                    </div>
+
+                                                    <div class="icon">
+                                                        <ion-icon name="star-sharp"></ion-icon>
+                                                    </div>
+
+                                                    <div class="icon">
+                                                        <ion-icon name="star-sharp"></ion-icon>
+                                                    </div>
+                                                </div>
+                                                <h5 class="item-price">NGN 150,000</h5>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="col-sm-12 col-md-6 col-lg-12 side-card-tab">
+                                        <a href="" class="text-decoration-none side-card">
+                                            <img src="./img/hometheatre.png" alt="" class="side-card-img">
+
+                                            <div class="ms-3">
+                                                <h4 class="item-name mt-0">home theatre & audio</h4>
+                                                <div class="item-rating">
+                                                    <div class="icon ms-0">
+                                                        <ion-icon name="star-sharp"></ion-icon>
+                                                    </div>
+
+                                                    <div class="icon">
+                                                        <ion-icon name="star-sharp"></ion-icon>
+                                                    </div>
+
+                                                    <div class="icon">
+                                                        <ion-icon name="star-sharp"></ion-icon>
+                                                    </div>
+
+                                                    <div class="icon">
+                                                        <ion-icon name="star-sharp"></ion-icon>
+                                                    </div>
+
+                                                    <div class="icon">
+                                                        <ion-icon name="star-sharp"></ion-icon>
+                                                    </div>
+                                                </div>
+                                                <h5 class="item-price">NGN 150,000</h5>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex align-items-center mt-3 not-mobile">
+                                    <a href="" class="view-more-link">
+                                        <span>view all</span>
+                                        <span class="icon">
+                                            <ion-icon name="arrow-forward-outline"></ion-icon>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Latest product -->
+                        <div class="col-sm-12 col-md-6 col-lg-3">
+                            <div class="py-4 px-0">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <h3 class="section-title">latest products</h3>
+
+                                    <div class="d-flex align-items-center mobile">
+                                        <a href="" class="view-more-link">
+                                            <span>view all</span>
+                                            <span class="icon">
+                                                <ion-icon name="arrow-forward-outline"></ion-icon>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="row m-0 mt-3">
+                                    <div class="col-sm-12 col-md-6 col-lg-12 side-card-tab">
+                                        <a href="" class="text-decoration-none side-card">
+                                            <img src="./img/mac.png" alt="" class="side-card-img">
+
+                                            <div class="ms-3">
+                                                <h4 class="item-name mt-0">MacBook pro</h4>
+                                                <div class="item-rating">
+                                                    <div class="icon ms-0">
+                                                        <ion-icon name="star-sharp"></ion-icon>
+                                                    </div>
+
+                                                    <div class="icon">
+                                                        <ion-icon name="star-sharp"></ion-icon>
+                                                    </div>
+
+                                                    <div class="icon">
+                                                        <ion-icon name="star-sharp"></ion-icon>
+                                                    </div>
+
+                                                    <div class="icon">
+                                                        <ion-icon name="star-sharp"></ion-icon>
+                                                    </div>
+
+                                                    <div class="icon">
+                                                        <ion-icon name="star-sharp"></ion-icon>
+                                                    </div>
+                                                </div>
+                                                <h5 class="item-price">NGN 150,000</h5>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="col-sm-12 col-md-6 col-lg-12 side-card-tab">
+                                        <a href="" class="text-decoration-none side-card">
+                                            <img src="./img/z-laptop.png" alt="" class="side-card-img">
+
+                                            <div class="ms-3">
+                                                <h4 class="item-name mt-0">ZenBook 3 ultra 8GB</h4>
+                                                <div class="item-rating">
+                                                    <div class="icon ms-0">
+                                                        <ion-icon name="star-sharp"></ion-icon>
+                                                    </div>
+
+                                                    <div class="icon">
+                                                        <ion-icon name="star-sharp"></ion-icon>
+                                                    </div>
+
+                                                    <div class="icon">
+                                                        <ion-icon name="star-sharp"></ion-icon>
+                                                    </div>
+
+                                                    <div class="icon">
+                                                        <ion-icon name="star-sharp"></ion-icon>
+                                                    </div>
+
+                                                    <div class="icon">
+                                                        <ion-icon name="star-sharp"></ion-icon>
+                                                    </div>
+                                                </div>
+                                                <h5 class="item-price">NGN 150,000</h5>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="col-sm-12 col-md-6 col-lg-12 side-card-tab">
+                                        <a href="" class="text-decoration-none side-card">
+                                            <img src="./img/powerbank.png" alt="" class="side-card-img">
+
+                                            <div class="ms-3">
+                                                <h4 class="item-name mt-0">photo personal printer</h4>
+                                                <div class="item-rating">
+                                                    <div class="icon ms-0">
+                                                        <ion-icon name="star-sharp"></ion-icon>
+                                                    </div>
+
+                                                    <div class="icon">
+                                                        <ion-icon name="star-sharp"></ion-icon>
+                                                    </div>
+
+                                                    <div class="icon">
+                                                        <ion-icon name="star-sharp"></ion-icon>
+                                                    </div>
+
+                                                    <div class="icon">
+                                                        <ion-icon name="star-sharp"></ion-icon>
+                                                    </div>
+
+                                                    <div class="icon">
+                                                        <ion-icon name="star-sharp"></ion-icon>
+                                                    </div>
+                                                </div>
+                                                <h5 class="item-price">NGN 150,000</h5>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="col-sm-12 col-md-6 col-lg-12 side-card-tab">
+                                        <a href="" class="text-decoration-none side-card">
+                                            <img src="./img/hometheatre.png" alt="" class="side-card-img">
+
+                                            <div class="ms-3">
+                                                <h4 class="item-name mt-0">home theatre & audio</h4>
+                                                <div class="item-rating">
+                                                    <div class="icon ms-0">
+                                                        <ion-icon name="star-sharp"></ion-icon>
+                                                    </div>
+
+                                                    <div class="icon">
+                                                        <ion-icon name="star-sharp"></ion-icon>
+                                                    </div>
+
+                                                    <div class="icon">
+                                                        <ion-icon name="star-sharp"></ion-icon>
+                                                    </div>
+
+                                                    <div class="icon">
+                                                        <ion-icon name="star-sharp"></ion-icon>
+                                                    </div>
+
+                                                    <div class="icon">
+                                                        <ion-icon name="star-sharp"></ion-icon>
+                                                    </div>
+                                                </div>
+                                                <h5 class="item-price">NGN 150,000</h5>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex align-items-center mt-3 not-mobile">
+                                    <a href="" class="view-more-link">
+                                        <span>view all</span>
+                                        <span class="icon">
+                                            <ion-icon name="arrow-forward-outline"></ion-icon>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Top Rated -->
+                        <div class="col-sm-12 col-md-6 col-lg-3">
+                            <div class="py-4 px-0">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <h4 class="section-title">top rated products</h4>
+
+                                    <div class="d-flex align-items-center mobile">
+                                        <a href="" class="view-more-link">
+                                            <span>view all</span>
+                                            <span class="icon">
+                                                <ion-icon name="arrow-forward-outline"></ion-icon>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="row m-0 mt-3">
+                                    <div class="col-sm-12 col-md-6 col-lg-12 side-card-tab">
+                                        <a href="" class="text-decoration-none side-card">
+                                            <img src="./img/mac.png" alt="" class="side-card-img">
+
+                                            <div class="ms-3">
+                                                <h4 class="item-name mt-0">MacBook pro</h4>
+                                                <div class="item-rating">
+                                                    <div class="icon ms-0">
+                                                        <ion-icon name="star-sharp"></ion-icon>
+                                                    </div>
+
+                                                    <div class="icon">
+                                                        <ion-icon name="star-sharp"></ion-icon>
+                                                    </div>
+
+                                                    <div class="icon">
+                                                        <ion-icon name="star-sharp"></ion-icon>
+                                                    </div>
+
+                                                    <div class="icon">
+                                                        <ion-icon name="star-sharp"></ion-icon>
+                                                    </div>
+
+                                                    <div class="icon">
+                                                        <ion-icon name="star-sharp"></ion-icon>
+                                                    </div>
+                                                </div>
+                                                <h5 class="item-price">NGN 150,000</h5>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="col-sm-12 col-md-6 col-lg-12 side-card-tab">
+                                        <a href="" class="text-decoration-none side-card">
+                                            <img src="./img/z-laptop.png" alt="" class="side-card-img">
+
+                                            <div class="ms-3">
+                                                <h4 class="item-name mt-0">ZenBook 3 ultra 8GB</h4>
+                                                <div class="item-rating">
+                                                    <div class="icon ms-0">
+                                                        <ion-icon name="star-sharp"></ion-icon>
+                                                    </div>
+
+                                                    <div class="icon">
+                                                        <ion-icon name="star-sharp"></ion-icon>
+                                                    </div>
+
+                                                    <div class="icon">
+                                                        <ion-icon name="star-sharp"></ion-icon>
+                                                    </div>
+
+                                                    <div class="icon">
+                                                        <ion-icon name="star-sharp"></ion-icon>
+                                                    </div>
+
+                                                    <div class="icon">
+                                                        <ion-icon name="star-sharp"></ion-icon>
+                                                    </div>
+                                                </div>
+                                                <h5 class="item-price">NGN 150,000</h5>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="col-sm-12 col-md-6 col-lg-12 side-card-tab">
+                                        <a href="" class="text-decoration-none side-card">
+                                            <img src="./img/powerbank.png" alt="" class="side-card-img">
+
+                                            <div class="ms-3">
+                                                <h4 class="item-name mt-0">photo personal printer</h4>
+                                                <div class="item-rating">
+                                                    <div class="icon ms-0">
+                                                        <ion-icon name="star-sharp"></ion-icon>
+                                                    </div>
+
+                                                    <div class="icon">
+                                                        <ion-icon name="star-sharp"></ion-icon>
+                                                    </div>
+
+                                                    <div class="icon">
+                                                        <ion-icon name="star-sharp"></ion-icon>
+                                                    </div>
+
+                                                    <div class="icon">
+                                                        <ion-icon name="star-sharp"></ion-icon>
+                                                    </div>
+
+                                                    <div class="icon">
+                                                        <ion-icon name="star-sharp"></ion-icon>
+                                                    </div>
+                                                </div>
+                                                <h5 class="item-price">NGN 150,000</h5>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="col-sm-12 col-md-6 col-lg-12 side-card-tab">
+                                        <a href="" class="text-decoration-none side-card">
+                                            <img src="./img/hometheatre.png" alt="" class="side-card-img">
+
+                                            <div class="ms-3">
+                                                <h4 class="item-name mt-0">home theatre & audio</h4>
+                                                <div class="item-rating">
+                                                    <div class="icon ms-0">
+                                                        <ion-icon name="star-sharp"></ion-icon>
+                                                    </div>
+
+                                                    <div class="icon">
+                                                        <ion-icon name="star-sharp"></ion-icon>
+                                                    </div>
+
+                                                    <div class="icon">
+                                                        <ion-icon name="star-sharp"></ion-icon>
+                                                    </div>
+
+                                                    <div class="icon">
+                                                        <ion-icon name="star-sharp"></ion-icon>
+                                                    </div>
+
+                                                    <div class="icon">
+                                                        <ion-icon name="star-sharp"></ion-icon>
+                                                    </div>
+                                                </div>
+                                                <h5 class="item-price">NGN 150,000</h5>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex align-items-center mt-3 not-mobile">
+                                    <a href="" class="view-more-link">
+                                        <span>view all</span>
+                                        <span class="icon">
+                                            <ion-icon name="arrow-forward-outline"></ion-icon>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="w-100 aos-item aos-animate aos-init" data-aos="fade-up">
+            <div class="e-container">
+                <div class="row gy-3 mt-2 d-flex justify-content-between align-items-center pb-4 border-bottom border-dark">
+                    <div class="col-sm-12 col-md-6 col-lg-4 d-flex align-items-center">
+                        <div class="d-flex align-items-center subscribe-icon">
+                            <ion-icon name="mail-outline"></ion-icon>
+                        </div>
+                        <div class="">
+                            <h4 class="text-uppercase text-light-darkend subscribe-title mb-2">subscribe to our news letter</h4>
+                            <p class="mb-0 text-light-darkend small-text">By subscribing you agree to receive email from us. <br> Please read our <a href="" class="text-decoration-none text-orange">Privacy Policy</a></p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-8 d-flex align-items-center justify-content-center">
+                        <form class="subscribe-input-box">
+                            <input type="text" placeholder="Enter your email...">
+                            <button type="submit">subscribe now!</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="mt-3 py-5 border-bottom border-dark row gy-3">
+                    <div class="col-sm-12 col-md-6 col-lg-9">
+                        <div class="row gy-3">
+                            <div class="col-sm-12 col-md-6 col-lg-3">
+                                <h3 class="footer-title mb-0">About Ebeano</h3>
+
+                                <ul class="m-0 p-0 mt-4">
+                                    <li class="list-unstyled footer-link">
+                                        <a href="">About us</a>
+                                    </li>
+
+                                    <li class="list-unstyled footer-link">
+                                        <a href="">Ebeano blog</a>
+                                    </li>
+
+                                    <li class="list-unstyled footer-link">
+                                        <a href="">ebeano careers</a>
+                                    </li>
+
+                                    <li class="list-unstyled footer-link">
+                                        <a href="">ebeano policies</a>
+                                    </li>
+
+                                    <li class="list-unstyled footer-link">
+                                        <a href="">privacy policy</a>
+                                    </li>
+
+                                    <li class="list-unstyled footer-link">
+                                        <a href="">ebeano mail</a>
+                                    </li>
+
+                                    <li class="list-unstyled footer-link">
+                                        <a href="">seller centers</a>
+                                    </li>
+
+                                    <li class="list-unstyled footer-link">
+                                        <a href="">flash deals</a>
+                                    </li>
+
+                                    <li class="list-unstyled footer-link">
+                                        <a href="">media contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="col-sm-12 col-md-6 col-lg-3">
+                                <h3 class="footer-title mb-0">customer serice</h3>
+
+                                <ul class="m-0 p-0 mt-4">
+                                    <li class="list-unstyled footer-link">
+                                        <a href="">contact us</a>
+                                    </li>
+
+                                    <li class="list-unstyled footer-link">
+                                        <a href="">site map</a>
+                                    </li>
+
+                                    <li class="list-unstyled footer-link">
+                                        <a href="">help center</a>
+                                    </li>
+
+                                    <li class="list-unstyled footer-link">
+                                        <a href="">report abuse</a>
+                                    </li>
+
+                                    <li class="list-unstyled footer-link">
+                                        <a href="">free shipping</a>
+                                    </li>
+
+                                    <li class="list-unstyled footer-link">
+                                        <a href="">order tracking</a>
+                                    </li>
+
+                                    <li class="list-unstyled footer-link">
+                                        <a href="">return & refund</a>
+                                    </li>
+
+                                    <li class="list-unstyled footer-link">
+                                        <a href="">overseas product</a>
+                                    </li>
+
+                                    <li class="list-unstyled footer-link">
+                                        <a href="">payment methods</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="col-sm-12 col-md-6 col-lg-3">
+                                <h3 class="footer-title mb-0">our services</h3>
+
+                                <ul class="m-0 p-0 mt-4">
+                                    <li class="list-unstyled footer-link">
+                                        <a href="">real estate</a>
+                                    </li>
+
+                                    <li class="list-unstyled footer-link">
+                                        <a href="">Ebeano pay</a>
+                                    </li>
+
+                                    <li class="list-unstyled footer-link">
+                                        <a href="">airtime recharge</a>
+                                    </li>
+
+                                    <li class="list-unstyled footer-link">
+                                        <a href="">ebeano artisans</a>
+                                    </li>
+
+                                    <li class="list-unstyled footer-link">
+                                        <a href="">hotel & airline bookings</a>
+                                    </li>
+
+                                    <li class="list-unstyled footer-link">
+                                        <a href="">education</a>
+                                    </li>
+
+                                    <li class="list-unstyled footer-link">
+                                        <a href="">bulk sales on ebeano</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="col-sm-12 col-md-6 col-lg-3">
+                                <h3 class="footer-title mb-0">About Ebeano</h3>
+
+                                <ul class="m-0 p-0 mt-4">
+
+                                    <li class="list-unstyled footer-link">
+                                        <a href="" class="w-100 d-flex align-items-center">
+                                            <span class="d-flex align-items-center me-2">
+                                                <ion-icon name="logo-twitter"></ion-icon>
+                                            </span>
+
+                                            <span>twitter</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="list-unstyled footer-link">
+                                        <a href="" class="w-100 d-flex align-items-center">
+                                            <span class="d-flex align-items-center me-2">
+                                                <ion-icon name="logo-instagram"></ion-icon>
+                                            </span>
+
+                                            <span>instagram</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="list-unstyled footer-link">
+                                        <a href="" class="w-100 d-flex align-items-center">
+                                            <span class="d-flex align-items-center me-2">
+                                                <ion-icon name="logo-linkedin"></ion-icon>
+                                            </span>
+
+                                            <span>linkedin</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="list-unstyled footer-link">
+                                        <a href="" class="w-100 d-flex align-items-center">
+                                            <span class="d-flex align-items-center me-2">
+                                                <ion-icon name="logo-facebook"></ion-icon>
+                                            </span>
+
+                                            <span>facebook</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-3">
+                        <h4 class="footer-title mb-0">ebeano app download</h4>
+
+                        <div class="mt-5 d-flex align-items-center">
+                            <div class="">
+                                <img src="./img/qrcode.PNG" class="img-fluid" alt="">
+                            </div>
+
+                            <div class="ms-3">
+                                <div class="d-flex align-items-center my-2">
+                                    <div class="platform-icon">
+                                        <img src="./img/andriod.PNG" alt="">
+                                    </div>
+                                    <h3 class="platform-text">Android</h3>
+                                </div>
+
+                                <div class="d-flex align-items-center my-2">
+                                    <div class="platform-icon">
+                                        <img src="./img/ios.PNG" alt="">
+                                    </div>
+                                    <h3 class="platform-text">iOS</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-3 py-3 row d-flex align-items-center">
+                    <div class="col-sm-12 col-md-4">
+                        <p class="small-text text-light-darkend copyright">&copy; 2021 Ebeano. All Right Reserved</p>
+                    </div>
+
+                    <div class="col-sm-12 col-md-8">
+                        <div class="slide-switch-container">
+                            <div class="slide-switch">
+                                <a href="" class="slides">
+                                    <img src="./img/paypal.png" alt="">
+                                </a>
+
+                                <a href="" class="slides">
+                                    <img src="./img/visa.png" alt="">
+                                </a>
+
+                                <a href="" class="slides">
+                                    <img src="./img/mastercard.png" alt="">
+                                </a>
+
+                                <a href="" class="slides">
+                                    <img src="./img/stripe.png" alt="">
+                                </a>
+
+                                <a href="" class="slides">
+                                    <img src="./img/verve.png" alt="">
+                                </a>
+
+                                <a href="" class="slides">
+                                    <img src="./img/interswitch.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Scripts -->
+        <script src="./plugins/country/js/countrySelect.js" charset="utf-8"></script>
+        <script src="./plugins/lang/js/langSelect.js" charset="utf-8"></script>
+        <!-- <script src="https://unpkg.com/swiper/swiper-bundle.js"></script> -->
+        <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script src="./plugins/aos/aos.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </body>
+</html>
